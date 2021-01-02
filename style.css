@@ -443,9 +443,10 @@ table {
 }
 
 .slogan-img {
-  width: 90%;
-  height: auto;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  background: url(image/slogan.jpg) center/cover no-repeat;
 }
 
 
