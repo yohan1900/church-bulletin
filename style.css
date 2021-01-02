@@ -255,6 +255,17 @@ table {
   margin-bottom:10px;
 }
 
+.ul2 {
+  list-style:none;
+  padding-right:30px;
+  text-align:right;
+  background-color:var(--color-pink);
+  color:white;
+  line-height:25px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
 .fa-male {
   margin: auto;
   color: var(--color-blue);
@@ -355,6 +366,7 @@ table {
 
 .skill {
   margin-bottom: 45px;
+  text-align: left;
 }
 
 .skill__description {
@@ -396,7 +408,8 @@ table {
 /* Testimonial */
 
 #testimoials {
-  background-color: var(--color-light-white);
+  /* background-color: var(--color-light-white); */
+  /* 눈오는 효과 주려면 배경이 나오게 해야해서 테스트모니얼 쪽 배경을 날려버렸음, 나중에 눈오는 효과 삭제할 때 위에게 주석 해제해야함 */
 }
 
 .major__title {
@@ -442,12 +455,20 @@ table {
   background-color: var(--color-white);
 }
 
-.slogan-img {
+.slogan-img-box{
+  justify-content: center;
+}
+.slogan-img{
+  width:100%;
+  /*내가 계속 사진 크기 때문에 스트레스 받았는데 이유는 간단했었음, 일단 여기에 있는 사진 자체의 크기를 설정하지 못했던 것임*/
+}
+
+/* .slogan-img {
   width: 100%;
   height: 100%;
   padding: 40px;
   background: url(image/slogan.jpg) center/cover no-repeat;
-}
+} */
 
 
 /* Contact */
