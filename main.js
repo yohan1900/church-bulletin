@@ -96,6 +96,7 @@ document.addEventListener('scroll', () => {
 
 // Projects ---> 문제가 생김 누르면 처음에 걸러지다가 없어져 버림... (확인해서 조치합시다.) 지금 내 생각에는 아무래도 undifined 못 잡아서 이렇게 된거 같음. 
 // 문제 해결함, 아무래도 위의 자바스크립트 27줄에 있던 타겟 콘솔로그와 겹치면서 뭔가 에러가 난듯하다. 그거 지우고 다시 차근히 하니까 잘 되네...
+
 const workBtnContainer = document.querySelector('.work__categories');
 const ProjectContainer = document.querySelector('.work__projects');
 const Projects = document.querySelectorAll('.project');

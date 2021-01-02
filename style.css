@@ -436,6 +436,19 @@ table {
   color: var(--color-pink);
 }
 
+
+/* 목표&표어 */
+#slogan {
+  background-color: var(--color-white);
+}
+
+.slogan-img {
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+
 /* Contact */
 #contact {
   background-color: var(--color-green);
