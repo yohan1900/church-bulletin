@@ -157,7 +157,7 @@ p {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  opacity: 0;
+  /* opacity: 0; */
   /* border: 2px var(--color-light-white) solid; */
 }
 
