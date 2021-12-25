@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@200,400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  /* background-color: #144b98; */
+}
+
+.fa-snowflake {
+  animation: fall 5s linear forwards;
+  color: #fff;
+  position: absolute;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(90vh);
+  }
+}
