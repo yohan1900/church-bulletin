@@ -608,3 +608,8 @@ color: var(--color-white);
     height: 120px;
   }
 }
+
+.vision{
+  text-align: center;
+  font-size: x-large;
+}
