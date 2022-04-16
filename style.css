@@ -165,6 +165,9 @@ p {
 .home__description {
   color: var(--color-white);
 }
+.home__description_event {
+  color: var(--color-pink);
+}
 
 .home__contact {
   color: var(--color-white);
