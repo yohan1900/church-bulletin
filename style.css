@@ -259,6 +259,18 @@ table {
   margin-bottom:10px;
 }
 
+.offering {
+  list-style:none;
+  padding-right:30px;
+  text-align:center;
+  background-color:var(--color-green);
+  color:white;
+  line-height:40px;
+  margin-top:20px;
+  margin-bottom:20px;
+  font-size: larger;
+}
+
 .ul2 {
   list-style:none;
   padding-right:30px;
