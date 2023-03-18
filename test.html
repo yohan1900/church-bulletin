@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Church Bulletin Form</title>
+  </head>
+  <body>
+    <form id="bulletin-form">
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" required />
+      <br />
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required />
+      <br />
+
+      <label for="service-time">Service Time:</label>
+      <input type="time" id="service-time" name="service_time" required />
+      <br />
+
+      <label for="speaker">Speaker:</label>
+      <input type="text" id="speaker" name="speaker" required />
+      <br />
+
+      <label for="announcements">Announcements:</label>
+      <textarea
+        id="announcements"
+        name="announcements"
+        rows="5"
+        cols="30"
+        required
+      ></textarea>
+      <br />
+
+      <label for="hymns">Hymns:</label>
+      <input
+        type="text"
+        id="hymns"
+        name="hymns"
+        placeholder="Enter hymn numbers separated by commas"
+        required
+      />
+      <br />
+
+      <label for="sermon-title">Sermon Title:</label>
+      <input type="text" id="sermon-title" name="sermon_title" required />
+      <br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
