@@ -458,13 +458,65 @@ table {
 }
 
 .testimonial__speech-bubble p {
-  color: var(--color-grey);
+  color: var (--color-grey);
 }
 
 .testimonial__speech-bubble a {
   color: var(--color-pink);
 }
 
+/* 스크린리더 전용 */
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
+
+/* 교회소식 그룹 */
+.announcement-groups {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.announcement-group {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px 18px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.testimonial__speech-bubble .announcement-group + .announcement-group {
+  margin-top: 14px;
+}
+.announcement-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+.announcement-heading i {
+  color: #3b82f6; /* 포인트 컬러 */
+}
+.announcement-items {
+  margin: 0;
+  padding-left: 1.1rem; /* 항목 들여쓰기 */
+}
+.announcement-items li {
+  line-height: 1.65;
+  margin: 6px 0;
+}
+
+/* 다크테마 대응(옵션) */
+@media (prefers-color-scheme: dark) {
+  .announcement-group {
+    background: #1f2937;
+    box-shadow: none;
+  }
+  .announcement-heading i {
+    color: #60a5fa;
+  }
+}
 
 /* 목표&표어 */
 #slogan {
@@ -520,9 +572,6 @@ color: var(--color-white);
   margin: 24px 0;
 }
 
-
-
-
 /*누르면 홈으로 가는 화살표*/
 .arrow {
   color: var(--color-green);
@@ -539,6 +588,56 @@ color: var(--color-white);
 .arrow.visible {
   opacity: 1;
   pointer-events: auto;
+}
+
+.announcement-list {
+  margin: 0;
+  padding-left: 1.25rem; /* 숫자 목록 들여쓰기 */
+}
+.announcement-list li {
+  margin-bottom: 0.75rem; /* 항목 간 간격 */
+  line-height: 1.6;
+}
+
+/* 교회소식 번호 매기기 */
+.announcements { counter-reset: notice; }
+.announcement-group { counter-increment: notice; }
+
+.announcement-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.announcement-items li {
+  position: relative;
+  line-height: 1.6;
+  margin: 6px 0;
+  padding-left: 1rem; /* 하위 항목 들여쓰기 */
+}
+
+/* 각 그룹의 첫 항목에만 번호 표기 (1. 2. 3. …) */
+.announcement-group .announcement-items li:first-child {
+  padding-left: 1.6rem;
+}
+.announcement-group .announcement-items li:first-child::before {
+  content: counter(notice) ".";
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+  color: #3b82f6;
+}
+
+/* 같은 그룹의 나머지 항목은 보조 기호로 정리(원하면 삭제 가능) */
+.announcement-group .announcement-items li:not(:first-child)::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: #9ca3af;
+}
+/* 다크모드 색상 조정(옵션) */
+@media (prefers-color-scheme: dark) {
+  .announcement-group .announcement-items li:first-child::before { color: #60a5fa; }
+  .announcement-group .announcement-items li:not(:first-child)::before { color: #94a3b8; }
 }
 
 /* For below 768px screen width */
