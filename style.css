@@ -723,6 +723,38 @@ color: var(--color-white);
   }
 }
 
+/* 모바일에서 교회소식 섹션의 검은 오버레이 제거 */
+@media (max-width: 768px) {
+  #testimonials,
+  #testimonials .section__container,
+  #testimonials .testimonials,
+  #testimonials .testimonial {
+    background: transparent !important;
+  }
+  #testimonials::before,
+  #testimonials::after,
+  #testimonials .section__container::before,
+  #testimonials .section__container::after,
+  #testimonials .testimonials::before,
+  #testimonials .testimonials::after,
+  #testimonials .testimonial::before,
+  #testimonials .testimonial::after,
+  #testimonials .testimonial__speech-bubble::before,
+  #testimonials .testimonial__speech-bubble::after {
+    content: none !important;
+    background: transparent !important;
+  }
+  #testimonials .testimonial__speech-bubble {
+    background-color: #fff !important; /* 말풍선 배경을 흰색으로 고정 */
+    filter: none !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
+  }
+  #testimonials * {
+    filter: none !important;
+    mix-blend-mode: normal !important;
+  }
+}
+
 .vision{
   text-align: center;
   font-size: x-large;
