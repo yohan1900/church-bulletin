@@ -428,6 +428,14 @@ table {
   /* 눈오는 효과 주려면 배경이 나오게 해야해서 테스트모니얼 쪽 배경을 날려버렸음, 나중에 눈오는 효과 삭제할 때 위에게 주석 해제해야함 */
 }
 
+/* 교회소식(광고) 섹션 배경을 항상 흰색으로 고정 */
+#testimonials .testimonial__speech-bubble,
+#testimonials .announcement-group {
+  background: #fff !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06) !important;
+  color: #111 !important;
+}
+
 .major__title {
   color: var(--color-black);
 }
@@ -509,10 +517,6 @@ table {
 
 /* 다크테마 대응(옵션) */
 @media (prefers-color-scheme: dark) {
-  .announcement-group {
-    background: #1f2937;
-    box-shadow: none;
-  }
   .announcement-heading i {
     color: #60a5fa;
   }
@@ -723,13 +727,19 @@ color: var(--color-white);
   }
 }
 
-/* 모바일에서 교회소식 섹션의 검은 오버레이 제거 */
+/* 모바일에서도 동일 강제 */
 @media (max-width: 768px) {
   #testimonials,
   #testimonials .section__container,
   #testimonials .testimonials,
   #testimonials .testimonial {
     background: transparent !important;
+    background-image: none !important;
+  }
+  #testimonials .testimonial__speech-bubble,
+  #testimonials .announcement-group {
+    background: #fff !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06) !important;
   }
   #testimonials::before,
   #testimonials::after,
@@ -742,16 +752,7 @@ color: var(--color-white);
   #testimonials .testimonial__speech-bubble::before,
   #testimonials .testimonial__speech-bubble::after {
     content: none !important;
-    background: transparent !important;
-  }
-  #testimonials .testimonial__speech-bubble {
-    background-color: #fff !important; /* 말풍선 배경을 흰색으로 고정 */
-    filter: none !important;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
-  }
-  #testimonials * {
-    filter: none !important;
-    mix-blend-mode: normal !important;
+    background: none !important;
   }
 }
 
