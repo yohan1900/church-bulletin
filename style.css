@@ -619,29 +619,8 @@ color: var(--color-white);
   padding-left: 1rem; /* 하위 항목 들여쓰기 */
 }
 
-/* 각 그룹의 첫 항목에만 번호 표기 (1. 2. 3. …) */
-.announcement-group .announcement-items li:first-child {
-  padding-left: 1.6rem;
-}
-.announcement-group .announcement-items li:first-child::before {
-  content: counter(notice) ".";
-  position: absolute;
-  left: 0;
-  font-weight: 700;
-  color: #3b82f6;
-}
-
-/* 같은 그룹의 나머지 항목은 보조 기호로 정리(원하면 삭제 가능) */
-.announcement-group .announcement-items li:not(:first-child)::before {
-  content: "–";
-  position: absolute;
-  left: 0;
-  color: #9ca3af;
-}
 /* 다크모드 색상 조정(옵션) */
 @media (prefers-color-scheme: dark) {
-  .announcement-group .announcement-items li:first-child::before { color: #60a5fa; }
-  .announcement-group .announcement-items li:not(:first-child)::before { color: #94a3b8; }
 }
 
 /* For below 768px screen width */
