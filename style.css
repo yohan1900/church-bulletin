@@ -257,6 +257,11 @@ table {
   margin: 20px 0;
 }
 
+.bulletin-nav #bulletinTitle {
+  white-space: nowrap;
+  font-size: var(--font-regular);
+}
+
 .bulletin-nav-btn {
   background: var(--color-blue);
   color: white;
@@ -834,6 +839,21 @@ color: var(--color-white);
   #testimonials .testimonial__speech-bubble::after {
     content: none !important;
     background: none !important;
+  }
+  
+  /* 모바일에서 주보 제목 폰트 크기 조정 */
+  .bulletin-nav #bulletinTitle {
+    font-size: 14px;
+  }
+  
+  .bulletin-nav {
+    gap: 10px;
+  }
+  
+  .bulletin-nav-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
   }
 }
 
