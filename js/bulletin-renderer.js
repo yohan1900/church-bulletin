@@ -220,16 +220,31 @@ class BulletinRenderer {
 
   // 기도제목
   renderPrayerTopics(topics) {
-    if (!topics || topics.length === 0) return;
-
     const container = document.querySelector('#skills .skillset__left');
     if (!container) return;
 
-    // 기존 기도제목 제거
-    container.querySelectorAll('.skill').forEach(el => el.remove());
+    // 기존 기도제목 제거 (주석 뒤의 모든 skill 요소들)
+    const comment = Array.from(container.childNodes).find(
+      node => node.nodeType === Node.COMMENT_NODE && node.textContent.includes('동적으로 렌더링')
+    );
+    if (comment) {
+      let next = comment.nextSibling;
+      while (next) {
+        const current = next;
+        next = next.nextSibling;
+        if (current.classList && current.classList.contains('skill')) {
+          current.remove();
+        } else if (current.nodeName === 'BR') {
+          current.remove();
+        }
+      }
+    }
+
+    // 기도제목이 없으면 종료
+    if (!topics || topics.length === 0) return;
 
     // 새 기도제목 추가
-    topics.forEach(topic => {
+    topics.forEach((topic, index) => {
       const skillDiv = document.createElement('div');
       skillDiv.className = 'skill';
       skillDiv.innerHTML = `
@@ -242,8 +257,8 @@ class BulletinRenderer {
       `;
       container.appendChild(skillDiv);
       
-      // <br> 태그 추가 (3번, 4번 뒤에만)
-      if (topic.startsWith('3.') || topic.startsWith('4.')) {
+      // <br> 태그 추가 (항목 사이)
+      if (index < topics.length - 1) {
         container.appendChild(document.createElement('br'));
       }
     });

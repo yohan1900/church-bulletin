@@ -3,8 +3,19 @@
 // 페이지 로드 시 주보 데이터 불러오기
 document.addEventListener('DOMContentLoaded', async () => {
   try {
-    // 최신 주보 불러오기
-    const bulletinData = await bulletinLoader.loadLatestBulletin();
+    // URL 파라미터에서 날짜 확인
+    const urlParams = new URLSearchParams(window.location.search);
+    const requestedDate = urlParams.get('date');
+    
+    let bulletinData;
+    
+    if (requestedDate) {
+      // 특정 날짜 주보 불러오기
+      bulletinData = await bulletinLoader.loadBulletinByDate(requestedDate);
+    } else {
+      // 최신 주보 불러오기
+      bulletinData = await bulletinLoader.loadLatestBulletin();
+    }
     
     if (bulletinData) {
       // 주보 렌더링

@@ -1,0 +1,77 @@
+{
+  "date": "2025-11-02",
+  "volume": "5",
+  "issue": "44",
+  "title": "",
+  
+  "morningWorship": {
+    "leader": "이상덕 목사",
+    "order": [
+      { "type": "call", "label": "예배의 부름", "content": "인도자" },
+      { "type": "hymn", "label": "찬송", "content": "15장" },
+      { "type": "creed", "label": "신앙고백", "content": "사도신경" },
+      { "type": "hymn", "label": "찬송", "content": "200장" },
+      { "type": "prayer", "label": "기도", "content": "유순이 권사<br>최윤태 안수집사" },
+      { "type": "scripture", "label": "성경봉독", "content": "마 4 : 4 (신4)" },
+      { "type": "special", "label": "특송", "content": "비전찬양대" },
+      { "type": "news", "label": "교회소식", "content": "인도자" },
+      { "type": "offering", "label": "봉헌", "content": "383장" },
+      { "type": "offeringPrayer", "label": "봉헌기도", "content": "담임목사" },
+      { "type": "sermon", "label": "설교", "content": "<strong>성경으로 삽니다</strong><br/>이상덕 목사" },
+      { "type": "closing", "label": "폐회송", "content": "204장" },
+      { "type": "benediction", "label": "축도", "content": "담임목사" }
+    ],
+    "nextWeekPrayer": [
+      { "part": "1부 기도", "person": "이은주 권사" },
+      { "part": "2부 기도", "person": "박귀원 장로" }
+    ],
+    "worshipCommittee": {
+      "month": "11월",
+      "ushers": "고승수 안수집사, 신명순 권사",
+      "offering": "김정명 집사, 이정숙 권사"
+    }
+  },
+  
+  "eveningWorship": {
+    "enabled": true,
+    "title": "21일 열방과 함께하는<br>2025년 다니엘 기도회<br>간증의 주인공이 되자",
+    "time": "오후 8시"
+  },
+  
+  "wednesdayWorship": {
+    "enabled": true,
+    "title": "2025년 다니엘 기도회<br>간증의 주인공이 되자",
+    "time": "오후 8시"
+  },
+  
+  "dawnPrayer": {
+    "enabled": true,
+    "title": "자유롭게 기도합니다",
+    "content": "시편 통독 (1편 ~ 150편)"
+  },
+  
+  "prayerTopics": [],
+  
+  "memoryVerse": {
+    "text": "주의 법을 사랑하는 자에게는 큰 평안이 있으니",
+    "content": "그들에게 장애물이 없으리이다.",
+    "reference": "시편 119:165"
+  },
+  
+  "images": {
+    "report": "2025-11-02-report.png",
+    "offering": "2025-11-02-offering.png"
+  },
+  
+  "announcements": [
+    { "order": 1, "content": "저희 교회에 오신 모든 분들을 진심으로 환영하고 축복합니다." },
+    { "order": 2, "content": "새가족 성경공부가 매주 금요일 오후 2시로 변경합니다.(다음모임 11월 14일)" },
+    { "order": 3, "content": "2025년도 다니엘 기도회가 11월 1일부터 있습니다.(11월 월삭예배를 겸합니다)<br><span class=\"sub-content\">기도카드를 작성해 하시고, 21일 동안 출석을 체크해 주시기 바랍니다</span><br><span class=\"sub-content\">이 기간에 구역예배는 쉬고 새벽시간은 자유롭게 하며, 시편 통독이 있습니다.</span><br><span class=\"sub-content\">이 기간에 금요구역헌금 및 사랑의 헌금은 어려운 이웃을 위해 사용됩니다.</span>" },
+    { "order": 4, "content": "오늘 저녁 다니엘 기도회 2일차는 11월 선교예배를 겸합니다." },
+    { "order": 5, "content": "매주간 축호 전도 및 노방전도를 합니다.(금요일 오전 10시 30분)" },
+    { "order": 6, "content": "고3 학생들의 진학과 진로를 위해 기도해 주시기 바랍니다.(수능일 11월 13일)<br><span class=\"sub-content\">(문제원, 박주원, 송찬규, 유현겸, 이송초, 박서현)</span>" },
+    { "order": 7, "content": "충남지방회 교역자 월례회가 4일(화) 초촌교회에서 있습니다." },
+    { "order": 8, "content": "지난 주일 등록하신 분 (서장원 형제, 신기정로 94번길 5)" },
+    { "order": 9, "content": "11월 행사<br><span class=\"sub-content\">11일(화) 지방회 정보통신부 AI 목회자 교육(목회자, 장로) 50명 예정</span><br><span class=\"sub-content\">16일(주) 추수감사주일—새가족 초청주일, 추수절 강단장식</span><br><span class=\"sub-content\">25일(화) 신대원 성결일구회 정기모임, 15명 예정</span><br><span class=\"sub-content\">26일(수) 성탄트리 점등식, 교회 앞마당. 30일(주) 대강절 시작</span>" }
+  ]
+}

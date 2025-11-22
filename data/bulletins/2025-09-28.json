@@ -1,0 +1,80 @@
+{
+  "date": "2025-09-28",
+  "volume": "5",
+  "issue": "39",
+  "title": "설립 5주년 기념주일",
+  
+  "morningWorship": {
+    "leader": "이상덕 목사",
+    "order": [
+      { "type": "call", "label": "예배의 부름", "content": "인도자" },
+      { "type": "hymn", "label": "찬송", "content": "28장" },
+      { "type": "creed", "label": "신앙고백", "content": "사도신경" },
+      { "type": "hymn", "label": "찬송", "content": "79장" },
+      { "type": "prayer", "label": "기도", "content": "조성돈 장로" },
+      { "type": "scripture", "label": "성경봉독", "content": "행 12 : 1---12 (신208)" },
+      { "type": "special", "label": "특송", "content": "비전찬양대" },
+      { "type": "news", "label": "교회소식", "content": "인도자" },
+      { "type": "offering", "label": "봉헌", "content": "301장" },
+      { "type": "offeringPrayer", "label": "봉헌기도", "content": "담임목사" },
+      { "type": "sermon", "label": "설교", "content": "<strong>살아남는 교회</strong><br/>설교자" },
+      { "type": "closing", "label": "폐회송", "content": "에벤에셀 하나님" },
+      { "type": "benediction", "label": "축도", "content": "담임목사" }
+    ],
+    "nextWeekPrayer": [
+      { "part": "1부 기도", "person": "임순석 권사" },
+      { "part": "2부 기도", "person": "유제균 장로" }
+    ],
+    "worshipCommittee": {
+      "month": "9월",
+      "ushers": "변태관 집사, 이정숙 권사",
+      "offering": "고승수 안수집사, 김경옥 권사"
+    }
+  },
+  
+  "eveningWorship": {
+    "enabled": true,
+    "title": "설립 5주년 기념 찬양예배<br>한국아가페합창단 초청연주회",
+    "prayer": "이상덕 목사",
+    "nextPrayer": "이희경 권사"
+  },
+  
+  "wednesdayWorship": {
+    "enabled": true,
+    "scripture": "고전 15 : 12---19",
+    "sermon": "부활이 없다면"
+  },
+  
+  "dawnPrayer": {
+    "enabled": true,
+    "title": "얍복강 기도회 (5시 50분)",
+    "content": "스가랴 강해"
+  },
+  
+  "prayerTopics": [],
+  
+  "memoryVerse": {
+    "text": "너는 내게 부르짖으라 내가 네게 응답하겠고",
+    "content": "네가 알지 못하는 크고 은밀한 일을 네게 보이리라",
+    "reference": "예레미야 33 : 3"
+  },
+  
+  "images": {
+    "report": "2025-09-28-report.png",
+    "offering": "2025-09-28-offering.png"
+  },
+  
+  "announcements": [
+    { "order": 1, "content": "저희 교회에 오신 모든 분들을 진심으로 환영하고 축복합니다." },
+    { "order": 2, "content": "오늘은 교회 설립 5주년 기념주일입니다. 여호와 이레의 하나님을 찬양합니다" },
+    { "order": 3, "content": "저녁찬양예배에 한국 아가페 합창단 초청 연주회가 있겠습니다." },
+    { "order": 4, "content": "10월 월삭예배는 수요일 새벽입니다." },
+    { "order": 5, "content": "다음 주일 저녁은 10월 선교예배로 드립니다." },
+    { "order": 6, "content": "매주간 축호 전도 및 노방전도를 합니다.(금요일 오전 10시 30분)" },
+    { "order": 7, "content": "병원 입원 (배인영 집사, 박일선 집사, 윤여홍 안수집사, 정민재 집사—백제병원)" },
+    { "order": 8, "content": "10월 16일(목, 오후7시)부터 매주 새가족성경공부가 있습니다" },
+    { "order": 9, "content": "10월 마지막 금요일 (10월 31일) 심야기도회가 있습니다." },
+    { "order": 10, "content": "고3 학생들의 진학과 진로를 위해 기도해 주시기 바랍니다.(수능일 11월 13일)<br><span class=\"sub-content\">(문제원, 박주원, 유현겸, 이송초, 송찬규)</span>" },
+    { "order": 11, "content": "10월 예배위원(안내:윤유홍, 김수부권사, 헌금 : 조성돈장로, 이수아권사)" }
+  ]
+}

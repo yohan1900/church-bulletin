@@ -88,6 +88,29 @@ class BulletinLoader {
     return this.currentIndex > 0;
   }
 
+  // 특정 날짜의 주보 불러오기 (URL 파라미터용)
+  async loadBulletinByDate(date) {
+    try {
+      // 주보 목록 로드
+      if (this.bulletinList.length === 0) {
+        await this.getBulletinList();
+      }
+      
+      // 현재 인덱스 찾기
+      const index = this.bulletinList.findIndex(b => b.date === date);
+      if (index >= 0) {
+        this.currentIndex = index;
+      }
+      
+      // 해당 날짜 주보 로드
+      return await this.loadBulletin(date);
+    } catch (error) {
+      console.error('주보 로드 실패:', error);
+      // 실패 시 최신 주보로 폴백
+      return await this.loadLatestBulletin();
+    }
+  }
+
   // 모든 주보 목록 가져오기
   async getBulletinList() {
     try {
