@@ -1,0 +1,89 @@
+{
+  "date": "2025-11-23",
+  "volume": "5",
+  "issue": "47",
+  "title": "",
+  
+  "morningWorship": {
+    "leader": "이상덕 목사",
+    "order": [
+      { "type": "call", "label": "예배의 부름", "content": "인도자" },
+      { "type": "hymn", "label": "찬송", "content": "14장" },
+      { "type": "creed", "label": "신앙고백", "content": "사도신경" },
+      { "type": "hymn", "label": "찬송", "content": "400장" },
+      { "type": "prayer", "label": "기도", "content": "박요한 집사<br>유제균 장로" },
+      { "type": "scripture", "label": "성경봉독", "content": "마 14 : 22---30 (신24)" },
+      { "type": "special", "label": "특송", "content": "1부 빛의 사자들이여 <br> 2부 주 여호와는 광대하시도다" },
+      { "type": "news", "label": "교회소식", "content": "인도자" },
+      { "type": "offering", "label": "봉헌찬송", "content": "450장" },
+      { "type": "offeringPrayer", "label": "봉헌기도", "content": "담임목사" },
+      { "type": "sermon", "label": "설교", "content": "<strong>붙드시면 삽니다</strong><br/>이상덕 목사" },
+      { "type": "closing", "label": "폐회송", "content": "주님여 이 손을" },
+      { "type": "benediction", "label": "축도", "content": "담임목사" }
+    ],
+    "nextWeekPrayer": [
+      { "part": "1부 기도", "person": "고은혜 집사" },
+      { "part": "2부 기도", "person": "박세철 장로" }
+    ],
+    "worshipCommittee": {
+      "month": "11월",
+      "ushers": "고승수 안수집사, 신명순 권사",
+      "offering": "김정명 집사, 이정숙 권사"
+    }
+  },
+  
+  "eveningWorship": {
+    "enabled": true,
+    "prayer": "이재선 권사",
+    "nextPrayer": "심상용 집사",
+    "scripture": "출 30 : 1---10",
+    "sermon": "분향단",
+    "hymns": ["369장", "354장"],
+    "special": "백강구역",
+    "nextSpecial": "규암구역"
+  },
+  
+  "wednesdayWorship": {
+    "enabled": true,
+    "scripture": "고전 16 : 1---12",
+    "sermon": "마지막 부탁"
+  },
+  
+  "dawnPrayer": {
+    "enabled": true,
+    "title": "얍복강 기도회",
+    "content": "에스라서 강해"
+  },
+  
+  "prayerTopics": [
+    "1. 주님을 기쁘시게, 사람에게 칭찬 듣는 교회.",
+    "2. 성령의 임재로 치유와 회복, 부흥을 주소서",
+    "3. 다음 세대를 세우게 하소서",
+    "4. 날마다 구원받는 수가 더해가게 하소서(3-30-300)",
+    "5. 마중물의 기적이 일어나게 하옵소서. (아프리카 바쿤사 교회)"
+  ],
+  
+  "memoryVerse": {
+    "text": "주의 말씀대로 나를 붙들어 살게 하시고",
+    "content": "내 소망이 부끄럽지 않게 하소서",
+    "reference": "시 119 : 116"
+  },
+  
+  "images": {
+    "report": "2025-11-23-report.png",
+    "offering": "2025-11-23-offering.png"
+  },
+  
+  "announcements": [
+    { "order": 1, "content": "저희 교회에 오신 모든 분들을 진심으로 환영하고 축복합니다." },
+    { "order": 2, "content": "다니엘 기도카드에 출석과 성경통독을 체크해서 내주시기 바랍니다." },
+    { "order": 3, "content": "새벽기도회와 구역예배가 이번주간부터 정상으로 드려집니다." },
+    { "order": 4, "content": "노방전도 및 축호전도가 매주 금요일 10시 30분에 있습니다." },
+    { "order": 5, "content": "새가족 성경공부는 매주 금요일 오후 2시에 하겠습니다.(11월 28일)" },
+    { "order": 6, "content": "25일(화) 신대원 성결일구회 정기모임이 우리교회에서 있습니다.(15명)" },
+    { "order": 7, "content": "오늘 오후에 성탄장식 하겠습니다. 성탄트리 점등식은 26일(수요예배)" },
+    { "order": 8, "content": "다음주일 30일(주)은 대림절 첫째 주일입니다.(성찬예식이 있습니다)" },
+    { "order": 9, "content": "세례희망자들은 신청해 주시기 바랍니다. 성탄절에 세례식이 있습니다." },
+    { "order": 10, "content": "감사기도내용과 추수감사 사행시를 사무실에 내 주시기 바랍니다." }
+  ]
+}

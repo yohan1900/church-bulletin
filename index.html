@@ -16,6 +16,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="js/bulletin-loader.js" defer></script>
+    <script src="js/bulletin-renderer.js" defer></script>
     <script src="main.js" defer></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -66,12 +68,22 @@
       />
       <h1 class="home__title">
         열린문교회<br />
-      </h1>      <h2 class="home__description">제 5 권 47 호  2025, 11, 23</h2>
+      </h1>
+      
+      <!-- 주보 네비게이션 -->
+      <div class="bulletin-nav">
+        <button id="prevBulletin" class="bulletin-nav-btn" title="이전 주보">◀</button>
+        <h2 class="home__description" id="bulletinTitle">제 5 권 47 호  2025, 11, 23</h2>
+        <button id="nextBulletin" class="bulletin-nav-btn" title="다음 주보">▶</button>
+      </div>
 
       <!-- 아래는 타이틀임, 안쓸 때는 주석처리하기로 -->
-      <!-- <h1 class="home__description_event">추수감사주일</h1> -->
+      <h1 class="home__description_event" id="bulletinEventTitle" style="display:none;"></h1>
 
-      <button class="home__contact" data-link="#contact">교회 안내</button>
+      <div class="bulletin-actions">
+        <button class="home__contact" data-link="#contact">교회 안내</button>
+        <a href="archive.html" class="archive-link">📚 주보 목록</a>
+      </div>
     </section>
 
     <!-- 예배안내 -->
@@ -86,205 +98,61 @@
 
         <h2>주일 낮 예배</h2>
         <ul class="ul1">
-          <li>인도: 이상덕 목사</li>
+          <li id="morningLeader">인도: 이상덕 목사</li>
         </ul>
 
-        <table>
+        <table id="morningWorshipTable">
           <tbody>
-            <tr>
-              <th>예배의 부름</th>
-              <td>인도자</td>
-            </tr>            <tr>
-              <th>찬송</th>
-              <td>14장</td>
-            </tr>
-            <tr>
-              <th>신앙고백</th>
-              <td>사도신경</td>
-            </tr>
-            <tr>
-              <th>찬송</th>
-              <td>400장</td>
-            </tr>
-            <tr>
-              <th>기도</th>
-              <td>
-                박요한 집사 <br>
-                유제균 장로
-              </td>
-            </tr>
-            <tr>
-              <th>성경봉독</th>
-              <td>마 14 : 22---30 (신24)</td>
-            </tr>
-            <tr>
-              <th>특송</th>
-              <td>비전찬양대</td>
-            </tr>
-            <tr>
-              <th>교회소식</th>
-              <td>인도자</td>
-            </tr>
-            <tr>
-              <th>봉헌찬송</th>
-              <td>450장</td>
-            </tr>
-            <tr>
-              <th>봉헌기도</th>
-              <td>담임목사</td>
-            </tr>
-            <tr>
-              <th>설교</th>
-              <td>
-                <strong>붙드시면 삽니다</strong><br />
-              </td>
-            </tr>
-            <tr>
-              <th>폐회송</th>
-              <td>주님여 이 손을</td>
-            </tr>
-              <th>축도</th>
-              <td>담임목사</td>
-            </tr>
+            <!-- 동적으로 렌더링됩니다 -->
           </tbody>
         </table>
-
-        <!-- <h2>제 5회 사무총회</h2> -->
 
         <ul class="ul2">
           <li>다음주일 기도</li>
         </ul>
-        <table>
-          <tbody>            <tr>
-              <th>1부 기도</th>
-              <td>고은혜 집사</td>
-            </tr>
-            <tr>
-              <th>2부 기도</th>
-              <td>박세철 장로</td>
-            </tr>
-          </tbody>
-        </table>        <ul class="ul2">
-          <li>11월 예배위원 안내</li>
-        </ul>
-        <table>
+        <table id="nextPrayerTable">
           <tbody>
-            <tr>
-              <th>안내위원</th>
-              <td>고승수 안수집사, 신명순 권사</td>
-            </tr>
-            <tr>
-              <th>헌금위원</th>
-              <td>김정명 집사, 이정숙 권사</td>
-            </tr>
+            <!-- 동적으로 렌더링됩니다 -->
           </tbody>
-        <!-- </table>
-        <br /><br />        <h2>주일 밤 예배</h2>
-        <ul class="ul1">
-          
-        </ul>
+        </table>
 
-        <table> -->
+        <ul class="ul2">
+          <li id="committeeMonth">11월 예배위원 안내</li>
+        </ul>
+        <table id="committeeTable">
           <tbody>
+            <!-- 동적으로 렌더링됩니다 -->
           </tbody>
         </table>
         <br /><br />
 
-        <h2>주일 밤 예배</h2>
-        <ul class="ul1">
-          <li>기도: 이재선 권사 (다음 심상용 집사)</li>
-          <li>특송: 백강구역 (다음 규암구역)</li>
+        <h2 id="eveningWorshipTitle">주일 밤 예배</h2>
+        <ul class="ul1" id="eveningWorshipInfo">
+          <!-- 동적으로 렌더링됩니다 -->
         </ul>
 
-        <table>
+        <table id="eveningWorshipTable">
           <tbody>
-            <tr>
-              <th>성경</th>
-              <td>출 30 : 1---10</td>
-            </tr>
-            <tr>
-              <th>설교</th>
-              <td>분향단</td>
-            </tr>
-            <tr>
-              <th>찬송</th>
-              <td>369장, 354장</td>
-            </tr>
+            <!-- 동적으로 렌더링됩니다 -->
           </tbody>
         </table>
         <br /><br />
 
-        <h2>수요 밤 예배</h2>
-        <ul class="ul1">
+        <h2 id="wednesdayWorshipTitle">수요 밤 예배</h2>
+        <ul class="ul1" id="wednesdayWorshipInfo">
+          <!-- 동적으로 렌더링됩니다 -->
         </ul>
 
-        <table>
+        <table id="wednesdayWorshipTable">
           <tbody>
-            <tr>
-              <th>성경</th>
-              <td>고전 16 : 1---12</td>
-            </tr>
-            <tr>
-              <th>설교</th>
-              <td>마지막 부탁</td>
-            </tr>
-          </tbody>
-          </tbody>
-        </table>
-        </table>
-        <br /><br />
-
-        <!-- </ul>
-        <table>
-          <tbody>
-            <tr>
-              <th>성경</th>
-              <td>고전 15 : 20---28</td>
-            </tr>
-            <tr>
-              <th>설교</th>
-              <td>참된 소망</td>
-            </tr> -->
+            <!-- 동적으로 렌더링됩니다 -->
           </tbody>
         </table>
         <br /><br />
 
-        <!-- <h2>수요 낮 예배</h2>
-        <h3></h3>
-        <ul class="ul1">
-          <li>
-            성탄 축하 예배 (오전 11시) <br>
-            
-          </li>
-        </ul>
-        <table>
-          <tbody>
-            <tr>
-              <th>기도</th>
-              <td>청년부 (박에스라 청년부 회계)</td>
-            </tr>
-            <tr>
-              <th>성경봉독</th>
-              <td>아동부 (구약: 송찬율, 김연우 / 신약: 신동진, 김시유)</td>
-            </tr>
-            <tr>
-              <th>성경</th>
-              <td>구약 (사 9:6-7), 신약 (요일 4:9-10)</td>
-            </tr>
-            <tr>
-              <th>설교</th>
-              <td>선물 (이상덕 목사)</td>
-            </tr>
-            <tr>
-              <th>헌금</th>
-              <td>학생부 (이송초, 김민아)</td>
-            </tr>
-          </tbody>
-        </table>
-        <br /><br /> -->
-              <h2>새벽기도회 (엍복강 기도회)</h2>
-        <ul class="ul1">
-          <li>에스라서 강해</li>
+        <h2 id="dawnPrayerTitle">새벽기도회 (얍복강 기도회)</h2>
+        <ul class="ul1" id="dawnPrayerContent">
+          <!-- 동적으로 렌더링됩니다 -->
         </ul>
         <br />
       </section>
@@ -333,11 +201,8 @@
 
               <div class "skill">
                 <div class="skill__description">
-                  <span>4. 날마다 구원받는 수가 더해가게 하소서(3-30-300)</span>
-                </div>
-                <div class="skill__bar">
-                  <div class="skill__value" style="width: 100%"></div>
-                </div>
+
+
               </div>
 
               <div class="skill">
@@ -360,10 +225,8 @@
         <div class="major__icon">
           <i class="fas fa-bible"></i>
         </div>        <h1 class="major__title">암송말씀</h1>
-        <div class="major__description">
-          <p>주의 말씀대로 나를 붙들어 살게 하시고</p>
-          <p>내 소망이 부끄럽지 않게 하소서</p>
-          <p>(시 119 : 116)</p>
+        <div class="major__description" id="memoryVerseContent">
+          <!-- 동적으로 렌더링됩니다 -->
         </div>
       </div>
     </section>
@@ -388,56 +251,11 @@
               />
               <div class="testimonial__speech-bubble">
                 <div class="announcements" role="region" aria-labelledby="announcements-title">
-                  <h2 id="announcements-title" class="sr-only">교회소식</h2>                  <ul class="announcement-groups">
-                    <li class="announcement-group">
-                      <div class="announcement-number">1</div>
-                      <div class="announcement-content">저희 교회에 오신 모든 분들을 진심으로 환영하고 축복합니다.</div>
-                    </li>
-                    
-                    <li class="announcement-group">
-                      <div class="announcement-number">2</div>
-                      <div class="announcement-content">다니엘 기도카드에 출석과 성경통독을 체크해서 내주시기 바랍니다.</div>
-                    </li>
-                    
-                    <li class="announcement-group">
-                      <div class="announcement-number">3</div>
-                      <div class="announcement-content">새벽기도회와 구역예배가 이번주간부터 정상으로 드려집니다.</div>
-                    </li>
-                    
-                    <li class="announcement-group">
-                      <div class="announcement-number">4</div>
-                      <div class="announcement-content">노방전도 및 축호전도가 매주 금요일 10시 30분에 있습니다.</div>
-                    </li>
-                    
-                    <li class="announcement-group">
-                      <div class="announcement-number">5</div>
-                      <div class="announcement-content">새가족 성경공부는 매주 금요일 오후 2시에 하겠습니다.(11월 28일)</div>
-                    </li>
-                    
-                    <li class="announcement-group">
-                      <div class="announcement-number">6</div>
-                      <div class="announcement-content">25일(화) 신대원 성결일구회 정기모임이 우리교회에서 있습니다.(15명)</div>
-                    </li>
-                    
-                    <li class="announcement-group">
-                      <div class="announcement-number">7</div>
-                      <div class="announcement-content">오늘 오후에 성탄장식 하겠습니다. 성탄트리 점등식은 26일(수요예배)</div>
-                    </li>
-                    
-                    <li class="announcement-group">
-                      <div class="announcement-number">8</div>
-                      <div class="announcement-content">다음주일 30일(주)은 대림절 첫째 주일입니다.(성찬예식이 있습니다)</div>
-                    </li>
-                    
-                    <li class="announcement-group">
-                      <div class="announcement-number">9</div>
-                      <div class="announcement-content">세례희망자들은 신청해 주시기 바랍니다. 성탄절에 세례식이 있습니다.</div>
-                    </li>
-                    
-                    <li class="announcement-group">
-                      <div class="announcement-number">10</div>
-                      <div class="announcement-content">감사기도내용과 추수감사 사행시를 사무실에 내 주시기 바랍니다.</div>
-                    </li>
+                  <h2 id="announcements-title" class="sr-only">교회소식</h2>
+                  <ul class="announcement-groups">
+                    <!-- 동적으로 렌더링됩니다 -->
+                  <ul class="announcement-groups">
+                    <!-- 동적으로 렌더링됩니다 -->
                   </ul>
                 </div>
               </div>
@@ -464,8 +282,8 @@
 
         <h1 class="major__title">구역보고</h1>
         <div class="major__description">
-          <div class="slogan-img-box">
-            <img class="slogan-img" src="image/report.png" alt="구역보고" />
+          <div class="slogan-img-box" id="regionReportImage">
+            <!-- 동적으로 렌더링됩니다 -->
           </div>
         </div>
       </div>
@@ -484,8 +302,8 @@
           <li>지난주 봉헌하신 분 (가나다순)</li>
         </ul>
         <div class="major__description">
-          <div class="slogan-img-box">
-            <img class="slogan-img" src="image/offering.png" alt="봉헌 안내" /> 
+          <div class="slogan-img-box" id="offeringImage">
+            <!-- 동적으로 렌더링됩니다 -->
           </div>
         </div>
       </div>

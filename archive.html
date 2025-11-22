@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>주보 아카이브 - 열린문교회</title>
+    <link rel="icon" type="image/png" href="image/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/bulletin-loader.js" defer></script>
+    <style>
+        .archive-container {
+            max-width: 1200px;
+            margin: 100px auto 50px;
+            padding: 20px;
+        }
+        
+        .archive-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .archive-header h1 {
+            color: #73aace;
+            margin-bottom: 10px;
+        }
+        
+        .bulletin-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .bulletin-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        
+        .bulletin-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+        
+        .bulletin-card h3 {
+            color: #73aace;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        
+        .bulletin-card .date {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4d4d4d;
+            margin-bottom: 8px;
+        }
+        
+        .bulletin-card .info {
+            color: #7c7979;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        
+        .bulletin-card .title {
+            background: #fff7d1;
+            color: #feb546;
+            padding: 5px 10px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-top: 10px;
+            font-weight: 600;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 50px;
+            color: #7c7979;
+        }
+        
+        .empty {
+            text-align: center;
+            padding: 50px;
+            color: #7c7979;
+        }
+        
+        .nav-link {
+            display: inline-block;
+            margin: 20px 0;
+            color: #73aace;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="archive-container">
+        <a href="index.html" class="nav-link">← 최신 주보로 돌아가기</a>
+        
+        <div class="archive-header">
+            <h1>📚 주보 아카이브</h1>
+            <p>지난 주보들을 확인하실 수 있습니다</p>
+        </div>
+
+        <div id="bulletinList" class="bulletin-grid">
+            <div class="loading">주보 목록을 불러오는 중...</div>
+        </div>
+    </div>
+
+    <script>
+        // 페이지 로드 시 주보 목록 불러오기
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                const bulletins = await bulletinLoader.getBulletinList();
+                renderBulletinList(bulletins);
+            } catch (error) {
+                console.error('주보 목록 로드 실패:', error);
+                document.getElementById('bulletinList').innerHTML = `
+                    <div class="empty">주보 목록을 불러올 수 없습니다.</div>
+                `;
+            }
+        });
+
+        // 주보 목록 렌더링
+        function renderBulletinList(bulletins) {
+            const container = document.getElementById('bulletinList');
+            
+            if (!bulletins || bulletins.length === 0) {
+                container.innerHTML = `
+                    <div class="empty">아직 등록된 주보가 없습니다.</div>
+                `;
+                return;
+            }
+
+            // 날짜순 정렬 (최신순)
+            bulletins.sort((a, b) => new Date(b.date) - new Date(a.date));
+            
+            container.innerHTML = '';
+            
+            bulletins.forEach(bulletin => {
+                const card = document.createElement('div');
+                card.className = 'bulletin-card';
+                card.onclick = () => viewBulletin(bulletin.date);
+                
+                const dateObj = new Date(bulletin.date);
+                const formattedDate = formatKoreanDate(dateObj);
+                
+                card.innerHTML = `
+                    <div class="date">${formattedDate}</div>
+                    <div class="info">제 ${bulletin.volume}권 ${bulletin.issue}호</div>
+                    ${bulletin.title ? `<div class="title">${bulletin.title}</div>` : ''}
+                `;
+                
+                container.appendChild(card);
+            });
+        }
+
+        // 날짜 포맷 (2025-11-23 -> 2025년 11월 23일)
+        function formatKoreanDate(date) {
+            const year = date.getFullYear();
+            const month = date.getMonth() + 1;
+            const day = date.getDate();
+            return `${year}년 ${month}월 ${day}일`;
+        }
+
+        // 주보 보기
+        function viewBulletin(date) {
+            // viewer.html로 이동하거나 index.html에 날짜 파라미터 전달
+            window.location.href = `viewer.html?date=${date}`;
+        }
+    </script>
+</body>
+</html>

@@ -1,5 +1,54 @@
 "use srtict";
 
+// 페이지 로드 시 주보 데이터 불러오기
+document.addEventListener('DOMContentLoaded', async () => {
+  try {
+    // 최신 주보 불러오기
+    const bulletinData = await bulletinLoader.loadLatestBulletin();
+    
+    if (bulletinData) {
+      // 주보 렌더링
+      bulletinRenderer.renderBulletin(bulletinData);
+      console.log('주보 로드 완료:', bulletinData.date);
+    } else {
+      console.error('주보를 불러올 수 없습니다.');
+    }
+  } catch (error) {
+    console.error('주보 로드 중 오류:', error);
+  }
+  
+  // 네비게이션 버튼 이벤트
+  setupBulletinNavigation();
+});
+
+// 주보 네비게이션 설정
+function setupBulletinNavigation() {
+  const prevBtn = document.getElementById('prevBulletin');
+  const nextBtn = document.getElementById('nextBulletin');
+  
+  if (prevBtn) {
+    prevBtn.addEventListener('click', async () => {
+      const bulletinData = await bulletinLoader.loadPreviousBulletin();
+      if (bulletinData) {
+        bulletinRenderer.renderBulletin(bulletinData);
+        // 페이지 상단으로 스크롤
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+  }
+  
+  if (nextBtn) {
+    nextBtn.addEventListener('click', async () => {
+      const bulletinData = await bulletinLoader.loadNextBulletin();
+      if (bulletinData) {
+        bulletinRenderer.renderBulletin(bulletinData);
+        // 페이지 상단으로 스크롤
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+  }
+}
+
 // make navbar transparent when it is on the top
 const navbar = document.querySelector("#navbar");
 const navbarHeight = navbar.getBoundingClientRect().height;
