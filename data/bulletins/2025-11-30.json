@@ -1,0 +1,92 @@
+{
+  "date": "2025-11-30",
+  "volume": "5",
+  "issue": "48",
+  "title": "대림절 첫째주일",
+  
+  "morningWorship": {
+    "leader": "이상덕 목사",
+    "order": [
+      { "type": "call", "label": "예배의 부름", "content": "인도자" },
+      { "type": "hymn", "label": "찬송", "content": "15장" },
+      { "type": "creed", "label": "신앙고백", "content": "사도신경" },
+      { "type": "hymn", "label": "찬송", "content": "98장" },
+      { "type": "prayer", "label": "기도", "content": "고은혜 집사<br>박세철 장로" },
+      { "type": "scripture", "label": "성경봉독", "content": "고전 11 : 23---26 (신277)" },
+      { "type": "special", "label": "특송", "content": "비전찬양대" },
+      { "type": "offering", "label": "봉헌", "content": "다함께" },
+      { "type": "news", "label": "교회소식", "content": "인도자" },
+      { "type": "offeringPrayer", "label": "봉헌기도", "content": "담임목사" },
+      { "type": "sermon", "label": "설교", "content": "<strong>연합하면 삽니다</strong><br/>이상덕 목사" },
+      { "type": "communion", "label": "성찬식", "content": "분병, 분잔" },
+      { "type": "closing", "label": "폐회송", "content": "찬양하라 내 영혼아" },
+      { "type": "benediction", "label": "축도", "content": "담임목사" }
+    ],
+    "nextWeekPrayer": [
+      { "part": "1부 기도", "person": "박순남 집사" },
+      { "part": "2부 기도", "person": "고승수 안수집사" }
+    ],
+    "worshipCommittee": {
+      "month": "11월",
+      "ushers": "고승수 안수집사, 신명순 권사",
+      "offering": "김정명 집사, 이정숙 권사"
+    }
+  },
+  
+  "eveningWorship": {
+    "enabled": true,
+    "prayer": "심상용 집사",
+    "nextPrayer": "이수아 권사",
+    "scripture": "출 30 : 1---10",
+    "sermon": "분향단",
+    "hymns": ["279장", "354장"],
+    "special": "규암구역",
+    "nextSpecial": "외리구역"
+  },
+  
+  "wednesdayWorship": {
+    "enabled": true,
+    "scripture": "눅 18 : 8",
+    "sermon": "믿음을 보겠느냐 (조성돈 장로)"
+  },
+  
+  "dawnPrayer": {
+    "enabled": true,
+    "title": "얍복강 기도회 (5시 50분)",
+    "content": "박귀원장로(화,금) 유제균장로(수), 박세철장로(목)"
+  },
+  
+  "prayerTopics": [
+    "1. 주님을 기쁘시게, 사람에게 칭찬 듣는 교회.",
+    "2. 성령의 임재로 치유와 회복, 부흥을 주소서",
+    "3. 다음 세대를 세우게 하소서",
+    "4. 날마다 구원받는 수가 더해가게 하소서(3-30-300)",
+    "5. 마중물의 기적이 일어나게 하옵소서. (아프리카 바쿤사 교회)"
+  ],
+  
+  "memoryVerse": {
+    "text": "보라 형제가 연합하여 동거함이",
+    "content": "어찌 그리 선하고 아름다운고",
+    "reference": "시편 133:1"
+  },
+  
+  "images": {
+    "report": "2025-11-30-report.png",
+    "offering": "2025-11-30-offering.png"
+  },
+  
+  "announcements": [
+    { "order": 1, "content": "저희 교회에 오신 모든 분들을 진심으로 환영하고 축복합니다." },
+    { "order": 2, "content": "대림절 첫째주일로 성찬에 참여합니다. 주님을 깊이 생각하며 새벽을 깨웁시다" },
+    { "order": 3, "content": "내일 12월 1일(월요일) 새벽은 12월 월삭예배로 드립니다.(새벽 5시 50분)" },
+    { "order": 4, "content": "이번 주간은 담임목사의 휴식 및 명년도 목양준비기간으로 기도합니다." },
+    { "order": 5, "content": "노방전도 및 축호전도가 매주 금요일 10시 30분에 있습니다" },
+    { "order": 6, "content": "다음주일 저녁예배는 12월 선교예배로 드립니다.(하늘영광교회 김재범 목사)" },
+    { "order": 7, "content": "세례신청은 다음주일까지입니다.(교육:12월 14일, 문답 20일, 예식 21일)" },
+    { "order": 8, "content": "2025년 성탄의 기쁨을 이웃과 함께 나누는 행사가 진행됩니다.<br><span class=\"sub-content\">사랑의이웃돕기(12월 1일~20일), 세례식(21일) 성탄버스킹(24일 오전 11시)</span><br><span class=\"sub-content\">성탄축하발표회(24일 저녁 7시), 성탄절감사 및 초청예배 (25일 오전 11시)</span>" },
+    { "order": 9, "content": "사무총회는 내년 1월11일입니다. (각 기관총회는 13일부터 하시기 바랍니다.)" },
+    { "order": 10, "content": "개업예배(부여휴대폰-국채호,최은아) 새시장상가 B동1층 AB-C5호, 6일(토) 1시" },
+    { "order": 11, "content": "떡을 대접하는 분 (오수옥 권사—팔순감사)" },
+    { "order": 12, "content": "12월 예배 (안내:박귀원장로, 김정숙권사 헌금:유제균장로, 이경은집사)" }
+  ]
+}
