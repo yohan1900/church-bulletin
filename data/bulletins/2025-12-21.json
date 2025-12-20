@@ -1,0 +1,89 @@
+{
+  "date": "2025-12-21",
+  "volume": "5",
+  "issue": "51",
+  "title": "대림절 넷째주일",
+  
+  "morningWorship": {
+    "leader": "이상덕 목사",
+    "order": [
+      { "type": "call", "label": "예배의 부름", "content": "인도자" },
+      { "type": "hymn", "label": "찬송", "content": "98장" },
+      { "type": "creed", "label": "신앙고백", "content": "사도신경" },
+      { "type": "hymn", "label": "찬송", "content": "105장" },
+      { "type": "prayer", "label": "기도", "content": "장옥금 권사<br>최윤태 안수집사" },
+      { "type": "scripture", "label": "성경봉독", "content": "눅 2 : 36--38" },
+      { "type": "special", "label": "특송", "content": "비전찬양대" },
+      { "type": "news", "label": "교회소식", "content": "인도자" },
+      { "type": "offering", "label": "봉헌", "content": "383장" },
+      { "type": "offeringPrayer", "label": "봉헌기도", "content": "담임목사" },
+      { "type": "sermon", "label": "설교", "content": "<strong>기도하면 삽니다</strong><br/>이상덕 목사" },
+      { "type": "closing", "label": "폐회송", "content": "사랑합니다 나의 예수님" },
+      { "type": "benediction", "label": "축도", "content": "담임목사" }
+    ],
+    "nextWeekPrayer": [
+      { "part": "1부 기도", "person": "전길식 권사" },
+      { "part": "2부 기도", "person": "박귀원 장로" }
+    ],
+    "worshipCommittee": {
+      "month": "12월",
+      "ushers": "박귀원 장로, 김정숙 권사",
+      "offering": "유제균 장로, 이경은 집사"
+    }
+  },
+  
+  "eveningWorship": {
+    "enabled": true,
+    "prayer": "김정숙 권사",
+    "nextPrayer": "이현정 권사",
+    "scripture": "출 31 : 1---11",
+    "sermon": "하나님의 일군",
+    "hymns": ["321장", "354장"],
+    "special": "백자구역",
+    "nextSpecial": "1남전도회"
+  },
+  
+  "wednesdayWorship": {
+    "enabled": true,
+    "info": "성탄이브 발표회",
+    "scripture": "요일 4 : 9---11",
+    "sermon": "낭비된 사랑"
+  },
+  
+  "dawnPrayer": {
+    "enabled": true,
+    "title": "얍복강 기도회 (5시 50분)",
+    "content": "베드로전서 강해"
+  },
+  
+  "prayerTopics": [
+    "1. 주님을 기쁘시게, 사람에게 칭찬 듣는 교회.",
+    "2. 성령의 임재로 치유와 회복, 부흥을 주소서",
+    "3. 다음 세대를 세우게 하소서",
+    "4. 날마다 구원받는 수가 더해가게 하소서(3-30-300)",
+    "5. 마중물의 기적이 일어나게 하옵소서. (아프리카 바쿤사 교회)"
+  ],
+  
+  "memoryVerse": {
+    "text": "여호와께서 내 음성과 내 간구를 들으시므로",
+    "content": "내가 그를 사랑하는도다 그의 귀를 내게 기울이셨으므로 내가 평생에 기도하리로다.",
+    "reference": "시편 116:1,2"
+  },
+  
+  "images": {
+    "report": "2025-12-21-report.png",
+    "offering": "2025-12-21-offering.png"
+  },
+  
+  "announcements": [
+    { "order": 1, "content": "저희 교회에 오신 모든 분들을 진심으로 환영하고 축복합니다." },
+    { "order": 2, "content": "오늘은 대림절 넷째주일입니다. 주님을 사모하는 대림절 기간이 되기를 바랍니다." },
+    { "order": 3, "content": "2025년 성탄의 기쁨을 이웃과 함께 나누는 행사가 진행됩니다.<br><span class=\"sub-content\">사랑의 나눔(23일, 화 1시)</span><br><span class=\"sub-content\">성탄버스킹(24일, 수 오전 11시, 군청)-준비 9시</span><br><span class=\"sub-content\">성탄축하발표회(24일, 수 7시)</span><br><span class=\"sub-content\">성탄감사 및 초청예배(25일 오전 11시--통합)</span>" },
+    { "order": 4, "content": "사무총회는 2026년 1월 둘째주일 11일입니다." },
+    { "order": 5, "content": "각 기관 총회가 마치면 보고해 주시기 바랍니다.(서면, 메일)" },
+    { "order": 6, "content": "이번주 노방전도는 성탄버스킹으로 대신합니다.(24일, 수, 오전 11시, 군청 앞)" },
+    { "order": 7, "content": "지난 주일 등록하신 분. 25-30 베토호 (황근숙 권사 인도)" },
+    { "order": 8, "content": "강병희, 임순석권사 딸, 강신혜 자매 결혼식 (27일, 토 11시, 은파펠리스웨딩홀)<br><span class=\"sub-content\">군청 앞 9시 30분 출발</span>" },
+    { "order": 9, "content": "차량, 주차, 방송, 재정부 격려회--29일(월), 오후 6시, 터전-백제중학교 옆" }
+  ]
+}
