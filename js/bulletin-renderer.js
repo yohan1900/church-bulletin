@@ -161,7 +161,6 @@ class BulletinRenderer {
       }
     }
   }
-
   // 수요 밤 예배
   renderWednesdayWorship(data) {
     const title = document.getElementById('wednesdayWorshipTitle');
@@ -176,22 +175,41 @@ class BulletinRenderer {
     }
 
     if (title) title.style.display = 'block';
-    if (info) info.style.display = 'block';
     
+    // info 필드가 있으면 특별행사 정보 표시
+    if (info) {
+      if (data.info) {
+        info.style.display = 'block';
+        info.innerHTML = `<li>${data.info}</li>`;
+        // sermon이 시간 정보면 추가 표시
+        if (data.sermon && !data.scripture) {
+          info.innerHTML += `<li>${data.sermon}</li>`;
+        }
+      } else {
+        info.style.display = 'none';
+      }
+    }
+    
+    // 성경이 있을 때만 테이블 표시
     if (table) {
-      table.style.display = 'table';
-      const tbody = table.querySelector('tbody');
-      if (tbody) {
-        tbody.innerHTML = `
-          <tr>
-            <th>성경</th>
-            <td>${data.scripture}</td>
-          </tr>
-          <tr>
-            <th>설교</th>
-            <td>${data.sermon}</td>
-          </tr>
-        `;
+      if (data.scripture) {
+        table.style.display = 'table';
+        const tbody = table.querySelector('tbody');
+        if (tbody) {
+          tbody.innerHTML = `
+            <tr>
+              <th>성경</th>
+              <td>${data.scripture}</td>
+            </tr>
+            <tr>
+              <th>설교</th>
+              <td>${data.sermon}</td>
+            </tr>
+          `;
+        }
+      } else {
+        // 특별행사(송구영신예배 등)일 경우 테이블 숨김
+        table.style.display = 'none';
       }
     }
   }
