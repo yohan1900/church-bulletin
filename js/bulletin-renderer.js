@@ -118,7 +118,6 @@ class BulletinRenderer {
       `;
     }
   }
-
   // 주일 밤 예배
   renderEveningWorship(data) {
     const title = document.getElementById('eveningWorshipTitle');
@@ -131,16 +130,22 @@ class BulletinRenderer {
       if (info) info.style.display = 'none';
       if (table) table.style.display = 'none';
       return;
-    }
-
-    // 주일밤예배 표시
-    if (title) title.style.display = 'block';
-    if (info) {
+    }    // 주일밤예배 표시
+    if (title) {
+      title.style.display = 'block';
+      title.textContent = '주일밤예배';
+    }    if (info) {
       info.style.display = 'block';
-      info.innerHTML = `
-        <li>기도: ${data.prayer}${data.nextPrayer ? ` (다음 ${data.nextPrayer})` : ''}</li>
-        ${data.special ? `<li>특송: ${data.special}${data.nextSpecial ? ` (다음 ${data.nextSpecial})` : ''}</li>` : ''}
-      `;
+      // info 필드가 있으면 선교예배 타이틀을 맨 위에 흰색으로 표시
+      let infoHTML = '';
+      if (data.info) {
+        infoHTML += `<li style="color: #ffffff; font-weight: bold;">${data.info}</li>`;
+      }
+      infoHTML += `<li>기도: ${data.prayer}${data.nextPrayer ? ` (다음 ${data.nextPrayer})` : ''}</li>`;
+      if (data.special) {
+        infoHTML += `<li>특송: ${data.special}${data.nextSpecial ? ` (다음 ${data.nextSpecial})` : ''}</li>`;
+      }
+      info.innerHTML = infoHTML;
     }
     
     if (table) {
