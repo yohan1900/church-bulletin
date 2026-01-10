@@ -17,7 +17,7 @@
       { "type": "offeringPrayer", "label": "봉헌기도", "content": "담임목사" },
       { "type": "sermon", "label": "설교", "content": "<strong>오직 성령으로</strong><br/>이상덕 목사" },
       { "type": "news", "label": "교회소식", "content": "인도자" },
-      { "type": "closing", "label": "폐회송", "content": "492장" },
+      { "type": "closing", "label": "폐회송", "content": "435장" },
       { "type": "benediction", "label": "축도", "content": "담임목사" }
     ],
     "nextWeekPrayer": [
