@@ -1,0 +1,91 @@
+{
+  "date": "2026-01-11",
+  "volume": "6",
+  "issue": "2",
+  "title": "제 6 회 사무총회",
+  
+  "morningWorship": {
+    "leader": "이상덕 목사",
+    "order": [
+      { "type": "call", "label": "예배의 부름", "content": "635장" },
+      { "type": "creed", "label": "신앙고백", "content": "사도신경" },
+      { "type": "hymn", "label": "찬송", "content": "28장" },
+      { "type": "prayer", "label": "기도", "content": "고은혜 집사<br>유제균 장로" },
+      { "type": "scripture", "label": "성경봉독", "content": "행 1 : 8, 14" },
+      { "type": "special", "label": "특송", "content": "비전찬양대" },
+      { "type": "offering", "label": "봉헌", "content": "헌금위원" },
+      { "type": "offeringPrayer", "label": "봉헌기도", "content": "담임목사" },
+      { "type": "sermon", "label": "설교", "content": "<strong>오직 성령으로</strong><br/>이상덕 목사" },
+      { "type": "news", "label": "교회소식", "content": "인도자" },
+      { "type": "closing", "label": "폐회송", "content": "492장" },
+      { "type": "benediction", "label": "축도", "content": "담임목사" }
+    ],
+    "nextWeekPrayer": [
+      { "part": "1부 기도", "person": "김정명 집사" },
+      { "part": "2부 기도", "person": "박세철 장로" }
+    ],
+    "worshipCommittee": {
+      "month": "1월",
+      "ushers": "조성돈 장로, 김경옥 권사",
+      "offering": "최윤태 안수집사, 임순석 권사"
+    }
+  },
+  
+  "eveningWorship": {
+    "enabled": true,
+    "info": "문화예배",
+    "prayer": "",
+    "scripture": "",
+    "sermon": "신의 악단",
+    "hymns": [],
+    "special": "",
+    "location": "스타박스 영화관(부여읍 계백로 305)",
+    "time": "오후 6시 30분"
+  },
+  
+  "wednesdayWorship": {
+    "enabled": true,
+    "scripture": "고후 2 : 1---12",
+    "sermon": "유익을 위해"
+  },
+  
+  "dawnPrayer": {
+    "enabled": true,
+    "title": "얍복강 기도회 (5시 50분)",
+    "content": "베드로후서 강해"
+  },
+  
+  "prayerTopics": [
+    "1. 주님을 기쁘시게, 사람에게 칭찬 듣는 교회.",
+    "2. 성령의 임재로 치유와 회복, 부흥을 주소서",
+    "3. 다음 세대를 세우게 하소서",
+    "4. 날마다 구원받는 수가 더해가게 하소서(3-30-300)",
+    "5. 마중물의 기적이 일어나게 하옵소서. (아프리카 바쿤사 교회)"
+  ],
+  
+  "memoryVerse": {
+    "text": "우리 주 예수 그리스도의 하나님, 영광의 아버지께서",
+    "content": "지혜와 계시의 영을 너희에게 주사<br>하나님을 알게 하시고",
+    "reference": "에베소서 1:17"
+  },
+  
+  "images": {
+    "report": "2026-01-11-report.png",
+    "offering": "2026-01-11-offering.png"
+  },
+  
+  "announcements": [
+    { "order": 1, "content": "저희 교회에 오신 모든 분들을 진심으로 환영하고 축복합니다." },
+    { "order": 2, "content": "2부 예배 후에 6회 사무총회가 있습니다.(참석이 어려우신 분은 위임장 제출)" },
+    { "order": 3, "content": "오늘 저녁예배에 영화상영이 있습니다.(오후 6시 30분, 스타박스, 신의 악단)" },
+    { "order": 4, "content": "이른비 신년특별새벽기도회가 진행 중입니다.(각 구역별로 안수기도 합니다.)" },
+    { "order": 5, "content": "1월 18일(주일)부터 21일(수)까지 부여읍 연합성회가 있습니다.(부여장로교회)" },
+    { "order": 6, "content": "이번주 노방전도는 커피콩빵 전도입니다. (금요일 오전 10시 30분)" },
+    { "order": 7, "content": "떡을 대접하시는 가정(여은석, 신문숙 집사 건강회복과 손주득남 감사)" },
+    { "order": 8, "content": "지난 주일 등록하신 분 (26-01 양환식 집사-조복랑 집사 남편, 26-02 양하은)" },
+    { "order": 9, "content": "연합총회(여전도회—1월20일 10시 홍산교회, 권사회—1월27일 10시 논산성결)" },
+    { "order": 10, "content": "금년 여름 전교인 수련회(7/31~8/2)와 내년 단기선교(1월)를 진행할 예정입니다." },
+    { "order": 11, "content": "금년 대심방은 가가호호 방식으로 사순절 기간(2월 셋째주)에 하겠습니다." },
+    { "order": 12, "content": "연말정산서가 필요하신 분은 고승수 안수집사께 신청하시기 바랍니다." }
+  ]
+}
