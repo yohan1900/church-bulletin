@@ -1,0 +1,90 @@
+{
+  "date": "2026-01-18",
+  "volume": "6",
+  "issue": "3",
+  "title": "",
+
+  "morningWorship": {
+    "leader": "이상덕 목사",
+    "order": [
+      { "type": "call", "label": "예배의 부름", "content": "인도자" },
+      { "type": "hymn", "label": "찬송", "content": "635장" },
+      { "type": "creed", "label": "신앙고백", "content": "사도신경" },
+      { "type": "hymn", "label": "찬송", "content": "213장" },
+      { "type": "prayer", "label": "기도", "content": "김정명 집사<br>박세철 장로" },
+      { "type": "scripture", "label": "성경봉독", "content": "요 4 : 23, 24" },
+      { "type": "special", "label": "특송", "content": "비전찬양대" },
+      { "type": "news", "label": "교회소식", "content": "인도자" },
+      { "type": "offering", "label": "봉헌", "content": "338장" },
+      { "type": "offeringPrayer", "label": "봉헌기도", "content": "담임목사" },
+      { "type": "sermon", "label": "설교", "content": "<strong>인생 최고의 자리</strong><br/>이상덕 목사" },
+      { "type": "closing", "label": "폐회송", "content": "찬양하라 내 영혼아" },
+      { "type": "benediction", "label": "축도", "content": "담임목사" }
+    ],
+    "nextWeekPrayer": [
+      { "part": "1부 기도", "person": "임순석 권사" },
+      { "part": "2부 기도", "person": "고승수 안수집사" }
+    ],
+    "worshipCommittee": {
+      "month": "1월",
+      "ushers": "조성돈 장로, 김경옥 권사",
+      "offering": "최윤태 안수집사, 임순석 권사"
+    }
+  },
+
+  "eveningWorship": {
+    "enabled": true,
+    "info": "부여읍 기독교 연합 부흥성회<br>주제 : 성령과 교회<br>강사 : 강석원 목사(거룩한 샘 성천침례교회)<br>장소 : 부여장로교회(부소산 주차장)<br>일시 : 1월 18일(주) ~ 21일(수)<br>새벽 5시, 오전 10시 30분, 저녁 7시 30분<br>(새벽기도회는 본교회에서 드립니다)",
+    "prayer": "",
+    "nextPrayer": "",
+    "scripture": "",
+    "sermon": "",
+    "hymns": [],
+    "special": "",
+    "nextSpecial": ""
+  },
+
+  "wednesdayWorship": {
+    "enabled": true,
+    "info": "부여읍 기독교 연합 부흥성회",
+    "scripture": "",
+    "sermon": "저녁 7시 30분 (부여장로교회)"
+  },
+
+  "dawnPrayer": {
+    "enabled": true,
+    "title": "얍복강 기도회 (5시 50분)",
+    "content": "베드로후서, 요한복음 강해"
+  },
+
+    "prayerTopics": [
+    "1. 주님을 기쁘시게, 사람에게 칭찬 듣는 교회.",
+    "2. 성령의 임재로 치유와 회복, 부흥을 주소서",
+    "3. 다음 세대를 세우게 하소서",
+    "4. 날마다 구원받는 수가 더해가게 하소서(3-30-300)",
+    "5. 마중물의 기적이 일어나게 하옵소서. (아프리카 바쿤사 교회)"
+  ],
+
+  "memoryVerse": {
+    "text": "주여 누가 주의 이름을 두려워하지 아니하며",
+    "content": "영화롭게 하지 아니하오리까 오직 주만 거룩하시니이다<br>주의 의로우신 일이 나타났으매<br>만국이 와서 주께 경배하리이다.",
+    "reference": "계 15:4"
+  },
+
+  "images": {
+    "report": "2026-01-18-report.png",
+    "offering": "2026-01-18-offering.png"
+  },
+
+  "announcements": [
+    { "order": 1, "content": "저희 교회에 오신 모든 분들을 진심으로 환영하고 축복합니다." },
+    { "order": 2, "content": "오늘 2부 예배 후 1여전도회 월례회가 있습니다.(유아실)" },
+    { "order": 3, "content": "오늘 저녁부터 21일(수)까지 부여읍 연합성회가 있습니다.(부여장로교회)<br><span class=\"sub-content\">새벽은 본 교회에서 드립니다.</span><br><span class=\"sub-content\">낮 10시 30분, 밤 7시 30분</span><br><span class=\"sub-content\">수요일 낮 담당</span>" },
+    { "order": 4, "content": "충남지방회연합총회<br>* 여전도회—1월 20일(화) 오전 10시 홍산교회<br>* 권사회—1월 27일(화) 오전 10시 논산성결교회<br>* 지방회—2월 12일(목) 오전 9시 논산제일교회" },
+    { "order": 5, "content": "이번주 노방전도는 금요일 오전 10시 30분" },
+    { "order": 6, "content": "떡을 대접하시는 가정(임순석 권사—딸 결혼 감사)" },
+    { "order": 7, "content": "1월 마지막 금요일(30일)은 심야기도회입니다." },
+    { "order": 8, "content": "2월 첫주일 저녁예배는 선교 및 직원헌신예배로 드립니다 (강사 박종현 목사)" },
+    { "order": 9, "content": "금년 대심방은 사순절 기간에 진행합니다. (2월 셋째주—23일부터)" }
+  ]
+}
