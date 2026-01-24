@@ -1,0 +1,112 @@
+{
+  "date": "2026-01-25",
+  "volume": "6",
+  "issue": "4",
+  "title": "",
+
+  "morningWorship": {
+    "leader": "이상덕 목사",
+    "order": [
+      { "type": "hymn", "label": "입례송", "content": "635 장" },
+      { "type": "creed", "label": "신앙고백", "content": "사도신경" },
+      { "type": "hymn", "label": "찬송", "content": "200 장" },
+      { "type": "prayer", "label": "기도", "content": "1부: 임순석 권사 <br> 2부: 고승수 안수집사" },
+      { "type": "scripture", "label": "성경봉독", "content": "딤후 3 : 15---17 (사회자)" },
+      { "type": "special", "label": "특송", "content": "비전찬양대" },
+      { "type": "offering", "label": "봉헌송", "content": "50 장 (1) (헌금위원)" },
+      { "type": "offeringPrayer", "label": "봉헌기도", "content": "담임목사" },
+      { "type": "news", "label": "교회소식", "content": "인도자" },
+      { "type": "sermon", "label": "설교", "content": "<strong>인생 최고의 능력</strong><br/>이상덕 목사" },
+      { "type": "hymn", "label": "찬송과 기도", "content": "주님 말씀하시면 (다같이)" },
+      { "type": "benediction", "label": "축도", "content": "담임목사" }
+    ],
+    "nextWeekPrayer": [
+      { "part": "1부 기도", "person": "박요한 집사" },
+      { "part": "2부 기도", "person": "오세웅 안수집사" }
+    ],
+    "worshipCommittee": {
+      "month": "1월",
+      "ushers": "조성돈 장로, 김경옥 권사",
+      "offering": "최윤태 안수집사, 임순석 권사"
+    }
+  },
+
+  "eveningWorship": {
+    "enabled": true,
+    "info": "주일 밤 예배 안내",
+    "prayer": "이정숙 권사",
+    "nextPrayer": "김정숙 권사",
+    "scripture": "출 32 : 15---35",
+    "sermon": "죄에 대한 태도",
+    "hymns": ["268장","354장"],
+    "special": "1여전도회",
+    "nextSpecial": "2여전도회",
+    "location": "",
+    "time": ""
+  },
+
+  "wednesdayWorship": {
+    "enabled": true,
+    "scripture": "고후 2 : 12---17",
+    "sermon": "좋은 교회의 모습"
+  },
+
+  "dawnPrayer": {
+    "enabled": true,
+    "title": "얍복강기도회 (5시 50분)",
+    "content": "요한복음 강해"
+  },
+
+  "prayerTopics": [
+    "1. 주님을 기쁘시게, 사람에게 칭찬 듣는 교회.",
+    "2. 성령의 임재로 치유와 회복, 부흥을 주소서",
+    "3. 다음 세대를 세우게 하소서",
+    "4. 날마다 구원받는 수가 더해가게 하소서(3-30-300)",
+    "5. 마중물의 기적이 일어나게 하옵소서. (아프리카 바쿤사 교회)"
+  ],
+
+  "memoryVerse": {
+    "text": "주님의 말씀은 내 발의 등불이요 내 길에 빛이니이다.",
+    "reference": "시편119:105"
+  },
+
+  "images": {
+    "report": "2026-01-25-report.png",
+    "offering": "2026-01-25-offering.png"
+  },
+
+  "announcements": [
+    { "order": 1, "content": "저희 교회에 오신 모든 분들을 진심으로 환영하고 축복합니다." },
+    { "order": 2, "content": "충남지방회연합총회 <br>* 권사회—1월 27일(화) 오전 10시 논산성결교회 <br>* 지방회—2월 12일(목) 오전 9시 논산제일교회" },
+    { "order": 3, "content": "충남지방회 직원교육이 수(28일) 오전 10시 논산성결교회입니다" },
+    { "order": 4, "content": "이번주 노방전도는 금요일 오전 10시 30분입니다." },
+    { "order": 5, "content": "떡을 대접하시는 가정: 신현봉 집사, 이재란 권사 (범사에 감사)" },
+    { "order": 6, "content": "이번주 금요일(30일)은 심야기도회입니다. <br>(오후 8시, 연합구역예배 및 기도회)" },
+    { "order": 7, "content": "다음주일 저녁예배는 선교 및 직원헌신예배로 드립니다 (강사 박종현 목사)" },
+    { "order": 8, "content": "지난 주일 등록하신 분: (26-3) 한미나 (천년나무) -- 박정미 전도" },
+    { "order": 9, "content": "금년 대심방은 사순절 기간에 진행합니다. (2월 셋째주—23일부터)" },
+    { "order": 10, "content": "2월 예배봉사위원: <br>안내 박귀원 장로, 이현정 권사  <br>헌금 유제균 장로, 박인규 권사" }
+  ],
+
+  "regionReport": [
+    {"name":"부여구역1","leader":"이화순","people":10,"offering":"75,000","scripture":491,"next":"조성순"},
+    {"name":"부여구역2","leader":"이경은","people":6,"offering":"30,000","scripture":220,"next":"김금자"},
+    {"name":"백강구역","leader":"최양숙","people":6,"offering":"45,000","scripture":233,"next":"김정숙"},
+    {"name":"규암구역","leader":"장옥금","people":7,"offering":"60,000","scripture":"","next":"이인자"},
+    {"name":"금봉구역","leader":"이수아","people":5,"offering":"45,000","scripture":152,"next":"박인규"},
+    {"name":"외리구역","leader":"김영한","people":8,"offering":"80,000","scripture":221,"next":"유순이"},
+    {"name":"백자구역","leader":"임순석","people":5,"offering":"35,000","scripture":56,"next":"이영희"},
+    {"name":"내리구역","leader":"교회","people":6,"offering":"34,000","scripture":150,"next":"신복남"}
+  ],
+
+  "offerings": {
+    "tithe": ["권업순","김경순","김숙환","박대찬","박에스더","박주원","신복남","유경민","조성돈(김경옥)","홍희자","무명"],
+    "thousandOffer": ["고승수(이영희)","고은지","권업순","김금자","김낙준","김태희","박귀원","박대찬","박대헌","박주원","박창균(조성순)","서민자(최종성)","송봉수","심상용(김정숙)","이상덕(박순임)","정가윤(정현서)","조수현(윤해식)","조예빈(조현준)","최영근(최성근)","최윤태","최혜경","한봉애","황근숙"],
+    "thanks": ["민경태","박경애","박순남","박용훈","서장원","송원옥","신인영","신현봉","유병석","유제균(박인규)","이경은","이해권(편미숙)","전길식(이희경)","최윤태(유순이 최혜경)","표경애","무명","무명","무명"],
+    "building": ["이경은","이상덕(박순임)"],
+    "relief": ["유제균(박인규)"],
+    "newYearThanks": ["박영란"],
+    "scholarship": ["권업순"],
+    "flowers": ["권업순"]
+  }
+}
