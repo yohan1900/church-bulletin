@@ -123,83 +123,71 @@ class BulletinRenderer {
     const title = document.getElementById('eveningWorshipTitle');
     const info = document.getElementById('eveningWorshipInfo');
     const table = document.getElementById('eveningWorshipTable');
-    
+
     if (!data || !data.enabled) {
-      // 주일밤예배 섹션 숨기기
       if (title) title.style.display = 'none';
       if (info) info.style.display = 'none';
       if (table) table.style.display = 'none';
       return;
     }
 
-    // 주일밤예배 표시
     if (title) {
       title.style.display = 'block';
       title.textContent = '주일밤예배';
     }
 
+    // 상단 요약 정보 — 연두색 띠에는 `info` 필드만 표시
     if (info) {
-      info.style.display = 'block';
-      let infoHTML = '';
-      
-      // info 필드가 있으면 타이틀을 맨 위에 흰색으로 표시
       if (data.info) {
-        infoHTML += `<li style="color: #ffffff; font-weight: bold;">${data.info}</li>`;
-      }
-      
-      // 문화예배(영화상영 등) - location, time 필드가 있는 경우
-      if (data.location) {
-        infoHTML += `<li>장소: ${data.location}</li>`;
-      }
-      if (data.time) {
-        infoHTML += `<li>시간: ${data.time}</li>`;
-      }
-      
-      // 일반 예배 - prayer 필드가 있는 경우
-      if (data.prayer) {
-        infoHTML += `<li>기도: ${data.prayer}${data.nextPrayer ? ` (다음 ${data.nextPrayer})` : ''}</li>`;
-      }
-      if (data.special) {
-        infoHTML += `<li>특송: ${data.special}${data.nextSpecial ? ` (다음 ${data.nextSpecial})` : ''}</li>`;
-      }
-      
-      info.innerHTML = infoHTML;
-    }
-    
-    if (table) {
-      // 문화예배는 성경 대신 제목만 표시
-      if (data.location) {
-        // 문화예배 형식
-        table.style.display = 'table';
-        const tbody = table.querySelector('tbody');
-        if (tbody) {
-          tbody.innerHTML = `
-            <tr>
-              <th>제목</th>
-              <td>${data.sermon}</td>
-            </tr>
-          `;
-        }
-      } else if (data.scripture) {
-        // 일반 예배 형식
-        table.style.display = 'table';
-        const tbody = table.querySelector('tbody');
-        if (tbody) {
-          tbody.innerHTML = `
-            <tr>
-              <th>성경</th>
-              <td>${data.scripture}</td>
-            </tr>
-            <tr>
-              <th>설교</th>
-              <td>${data.sermon}</td>
-            </tr>
-            ${data.hymns && data.hymns.length > 0 ? `<tr><th>찬송</th><td>${data.hymns.join(', ')}</td></tr>` : ''}
-          `;
-        }
+        info.style.display = 'block';
+        info.innerHTML = `<li style="color: #ffffff; font-weight: bold;">${data.info}</li>`;
       } else {
-        table.style.display = 'none';
+        info.style.display = 'none';
+        info.innerHTML = '';
       }
+    }
+
+    // 상세 테이블 (가능한 모든 필드 표시)
+    if (table) {
+      const tbody = table.querySelector('tbody');
+      if (!tbody) return;
+
+      // 문화예배(장소 정보)가 있는 경우 별도 간략 표시
+      if (data.location) {
+        table.style.display = 'table';
+        tbody.innerHTML = `
+          <tr>
+            <th>제목</th>
+            <td>${data.sermon || ''}</td>
+          </tr>
+        `;
+        return;
+      }
+
+      // 일반 예배 형태: 모든 가능한 행을 추가
+      table.style.display = 'table';
+      let rows = '';
+
+      if (data.presider) rows += `<tr><th>사회</th><td>${data.presider}</td></tr>`;
+      if (data.prayer) rows += `<tr><th>기도</th><td>${data.prayer}${data.nextPrayer ? ` (다음: ${data.nextPrayer})` : ''}</td></tr>`;
+      if (data.scripture) rows += `<tr><th>성경</th><td>${data.scripture}</td></tr>`;
+      if (data.sermon) rows += `<tr><th>설교</th><td>${data.sermon}</td></tr>`;
+
+      if (data.special) {
+        let specialHtml = `${data.special}`;
+        if (data.specialList && data.specialList.length > 0) {
+          specialHtml += `<br/><small>${data.specialList.join(', ')}</small>`;
+        }
+        rows += `<tr><th>특송</th><td>${specialHtml}</td></tr>`;
+      }
+
+      if (data.offering) rows += `<tr><th>헌금</th><td>${data.offering}</td></tr>`;
+      if (data.commitment) rows += `<tr><th>다짐</th><td>${data.commitment}</td></tr>`;
+      if (data.announcer) rows += `<tr><th>광고</th><td>${data.announcer}</td></tr>`;
+      if (data.hymns && data.hymns.length > 0) rows += `<tr><th>찬송</th><td>${data.hymns.join(', ')}</td></tr>`;
+      if (data.benediction) rows += `<tr><th>축도</th><td>${data.benediction}</td></tr>`;
+
+      tbody.innerHTML = rows || `<tr><td colspan="2">주일밤예배 정보가 없습니다.</td></tr>`;
     }
   }
   // 수요 밤 예배
