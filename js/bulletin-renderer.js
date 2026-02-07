@@ -2,7 +2,13 @@
 // JSON 데이터를 HTML로 렌더링
 
 class BulletinRenderer {
-  constructor() {}
+  constructor() {
+    // 이미지 로드 추적을 위한 타임스탬프
+    this.imageLoadTimestamp = {
+      regionReportImage: 0,
+      offeringImage: 0
+    };
+  }
 
   // 전체 주보 렌더링
   renderBulletin(bulletinData) {
@@ -10,6 +16,9 @@ class BulletinRenderer {
       console.error('주보 데이터가 없습니다');
       return;
     }
+
+    // 먼저 이미지 컨테이너를 초기화 (비동기 로드 충돌 방지)
+    this.clearImages();
 
     this.renderHeader(bulletinData);
     this.renderMorningWorship(bulletinData.morningWorship);
@@ -22,6 +31,20 @@ class BulletinRenderer {
     this.renderDistrictWorship(bulletinData.districtWorship);
     this.renderOfferings(bulletinData.offerings);
     this.renderImages(bulletinData);
+  }
+
+  // 이미지 컨테이너 초기화
+  clearImages() {
+    const offeringContainer = document.getElementById('offeringImage');
+    const reportContainer = document.getElementById('regionReportImage');
+    if (offeringContainer) {
+      offeringContainer.innerHTML = '';
+      offeringContainer.style.display = 'none';
+    }
+    if (reportContainer) {
+      reportContainer.innerHTML = '';
+      reportContainer.style.display = 'none';
+    }
   }
 
   // 헤더 (제목, 날짜)
@@ -482,19 +505,31 @@ class BulletinRenderer {
   }
 
   renderImages(data) {
-    // JSON에 images 정보가 있을 때만 렌더링
-    if (!data || !data.images) return;
+    // 이미지 컨테이너 참조
+    const offeringContainer = document.getElementById('offeringImage');
+    const reportContainer = document.getElementById('regionReportImage');
 
-    // 구역보고 이미지
-    if (data.images.report) {
-      const reportImg = `data/images/${data.images.report}`;
-      this.loadImage(reportImg, 'regionReportImage', '구역보고');
+    // JSON에 images 정보가 없으면 조기 종료 (clearImages에서 이미 초기화됨)
+    if (!data || !data.images) {
+      return;
     }
 
-    // 봉헌 이미지
-    if (data.images.offering) {
+    // 구역보고 이미지 - null이 아니고 유효한 파일명일 때만 로드
+    if (data.images.report && typeof data.images.report === 'string') {
+      const reportImg = `data/images/${data.images.report}`;
+      this.loadImage(reportImg, 'regionReportImage', '구역보고');
+    } else {
+      // report가 없으면 타임스탬프를 즉시 업데이트 (이전 비동기 요청 무효화)
+      this.imageLoadTimestamp['regionReportImage'] = Date.now();
+    }
+
+    // 봉헌 이미지 - null이 아니고 유효한 파일명일 때만 로드
+    if (data.images.offering && typeof data.images.offering === 'string') {
       const offeringImg = `data/images/${data.images.offering}`;
       this.loadImage(offeringImg, 'offeringImage', '봉헌 안내');
+    } else {
+      // offering이 없으면 타임스탬프를 즉시 업데이트 (이전 비동기 요청 무효화)
+      this.imageLoadTimestamp['offeringImage'] = Date.now();
     }
   }
 
@@ -503,16 +538,31 @@ class BulletinRenderer {
     const container = document.getElementById(containerId);
     if (!container) return;
 
+    // 현재 요청의 타임스탬프 설정
+    const requestTimestamp = Date.now();
+    this.imageLoadTimestamp[containerId] = requestTimestamp;
+
     const img = new Image();
     
     img.onload = () => {
+      // 이 요청이 가장 최신 요청인지 확인
+      if (this.imageLoadTimestamp[containerId] !== requestTimestamp) {
+        return; // 더 이상 유효하지 않은 요청이므로 무시
+      }
+      
       container.innerHTML = `<img class="slogan-img" src="${imagePath}" alt="${altText}" />`;
       container.style.display = 'block';
     };
     
     img.onerror = () => {
-      container.innerHTML = `<p style="text-align:center; color:#999;">이미지가 없습니다.</p>`;
-      container.style.display = 'block';
+      // 이 요청이 가장 최신 요청인지 확인
+      if (this.imageLoadTimestamp[containerId] !== requestTimestamp) {
+        return; // 더 이상 유효하지 않은 요청이므로 무시
+      }
+
+      // 이미지가 없으면 컨테이너 비우기 (JSON 데이터 표시를 위해)
+      container.innerHTML = '';
+      container.style.display = 'none';
     };
     
     img.src = imagePath;
