@@ -19,6 +19,8 @@ class BulletinRenderer {
     this.renderPrayerTopics(bulletinData.prayerTopics);
     this.renderMemoryVerse(bulletinData.memoryVerse);
     this.renderAnnouncements(bulletinData.announcements);
+    this.renderDistrictWorship(bulletinData.districtWorship);
+    this.renderOfferings(bulletinData.offerings);
     this.renderImages(bulletinData);
   }
 
@@ -349,6 +351,136 @@ class BulletinRenderer {
   }
 
   // 이미지 렌더링 (구역보고, 봉헌)
+  // 구역예배 렌더링
+  renderDistrictWorship(data) {
+    const container = document.getElementById('districtWorshipTable');
+    if (!container) return;
+
+    if (!data || !data.enabled || !data.reports || data.reports.length === 0) {
+      container.innerHTML = '';
+      return;
+    }
+
+    let html = '<table class="district-table"><thead><tr>';
+    html += '<th>장소</th><th>인원</th><th>헌금</th><th>성경</th><th>다음장소</th>';
+    html += '</tr></thead><tbody>';
+
+    data.reports.forEach(report => {
+      html += '<tr>';
+      html += `<td>${report.district}</td>`;
+      html += `<td>${report.attendance}</td>`;
+      html += `<td>${report.offering.toLocaleString()}</td>`;
+      html += `<td>${report.scripture}</td>`;
+      html += `<td>${report.nextLeader}</td>`;
+      html += '</tr>';
+    });
+
+    html += '</tbody></table>';
+    container.innerHTML = html;
+  }
+
+  // 봉헌 렌더링
+  renderOfferings(data) {
+    const container = document.getElementById('offeringTable');
+    if (!container) return;
+
+    if (!data) {
+      container.innerHTML = '';
+      return;
+    }
+
+    let html = '<div class="offerings-container">';
+    
+    // 십일조
+    if (data.tithe && data.tithe.length > 0) {
+      html += '<div class="offering-section">';
+      html += '<h3>십일조</h3>';
+      html += '<p>' + data.tithe.join(', ') + '</p>';
+      html += '</div>';
+    }
+
+    // 천 번제
+    if (data.thousandOffer && data.thousandOffer.length > 0) {
+      html += '<div class="offering-section">';
+      html += '<h3>일천번제</h3>';
+      html += '<p>' + data.thousandOffer.join(', ') + '</p>';
+      html += '</div>';
+    }
+
+    // 감사헌금
+    if (data.thanks && data.thanks.length > 0) {
+      html += '<div class="offering-section">';
+      html += '<h3>감사헌금</h3>';
+      html += '<p>' + data.thanks.join(', ') + '</p>';
+      html += '</div>';
+    }
+
+    // 월삭헌금
+    if (data.monthly && data.monthly.length > 0) {
+      html += '<div class="offering-section">';
+      html += '<h3>월삭헌금</h3>';
+      html += '<p>' + data.monthly.join(', ') + '</p>';
+      html += '</div>';
+    }
+
+    // 건축헌금
+    if (data.building && data.building.length > 0) {
+      html += '<div class="offering-section">';
+      html += '<h3>건축헌금</h3>';
+      html += '<p>' + data.building.join(', ') + '</p>';
+      html += '</div>';
+    }
+
+    // 선교헌금
+    if (data.mission && data.mission.length > 0) {
+      html += '<div class="offering-section">';
+      html += '<h3>선교헌금</h3>';
+      html += '<p>' + data.mission.join(', ') + '</p>';
+      html += '</div>';
+    }
+
+    // 어린이선교
+    if (data.childrenMission && data.childrenMission.length > 0) {
+      html += '<div class="offering-section">';
+      html += '<h3>어린이선교</h3>';
+      html += '<p>' + data.childrenMission.join(', ') + '</p>';
+      html += '</div>';
+    }
+
+    // 장학헌금
+    if (data.scholarship && data.scholarship.length > 0) {
+      html += '<div class="offering-section">';
+      html += '<h3>장학헌금</h3>';
+      html += '<p>' + data.scholarship.join(', ') + '</p>';
+      html += '</div>';
+    }
+
+    // 구제헌금
+    if (data.relief && data.relief.length > 0) {
+      html += '<div class="offering-section">';
+      html += '<h3>구제헌금</h3>';
+      html += '<p>' + data.relief.join(', ') + '</p>';
+      html += '</div>';
+    }
+
+    // 꽃꽂이
+    if (data.flowers && data.flowers.length > 0) {
+      html += '<div class="offering-section">';
+      html += '<h3>꽃꽂이</h3>';
+      html += '<p>' + data.flowers.join(', ') + '</p>';
+      html += '</div>';
+    }
+
+    html += '</div>';
+    
+    // 데이터가 있으면 표 표시, 없으면 숨김
+    if (html.includes('offering-section')) {
+      container.innerHTML = html;
+    } else {
+      container.innerHTML = '';
+    }
+  }
+
   renderImages(data) {
     // JSON에 images 정보가 있을 때만 렌더링
     if (!data || !data.images) return;
