@@ -1,0 +1,183 @@
+{
+  "date": "2026-02-29",
+  "volume": "6",
+  "issue": "9",
+  "title": "3,1절 107주년 기념예배",
+
+  "morningWorship": {
+    "leader": "이상덕 목사",
+    "order": [
+      { "type": "hymn", "label": "입례송", "content": "635 장 (다같이)" },
+      { "type": "creed", "label": "신앙고백", "content": "사도신경 (다같이)" },
+      { "type": "hymn", "label": "찬송", "content": "585 장 (다같이)" },
+      { "type": "prayer", "label": "기도", "content": "유제균 장로" },
+      { "type": "scripture", "label": "성경봉독", "content": "시편 33 : 10 ~ 15 (사회자)" },
+      { "type": "special", "label": "특송과 봉헌", "content": "비전찬양대 (헌금위원)" },
+      { "type": "news", "label": "교회소식", "content": "담임목사" },
+      { "type": "offeringPrayer", "label": "봉헌기도", "content": "인도자" },
+      { "type": "sermon", "label": "설교", "content": "<strong>기독교인의 나라사랑</strong><br/>이상덕 목사" },
+      { "type": "special", "label": "독립선언문낭독", "content": "다같이" },
+      { "type": "prayer", "label": "결단기도", "content": "다같이" },
+      { "type": "hymn", "label": "찬송", "content": "580 장 (다같이)" },
+      { "type": "special", "label": "만세삼창", "content": "대한독립만세 ! (다같이)" },
+      { "type": "special", "label": "애국가제창", "content": "다같이" },
+      { "type": "benediction", "label": "축도", "content": "담임목사" }
+    ],
+    "nextWeekPrayer": [
+      { "part": "1부 기도", "person": "김지윤 집사" },
+      { "part": "2부 기도", "person": "박세철 장로" }
+    ],
+    "worshipCommittee": {
+      "month": "3월",
+      "ushers": "민경태 권사, 이화순 집사",
+      "offering": "고승수 안수집사, 이정숙 권사"
+    }
+  },
+
+  "eveningWorship": {
+    "enabled": true,
+    "info": "3월 선교예배",
+    "prayer": "서민자 권사 (다음: 김영한 권사)",
+    "special": "부여 1구역 (다음: 부여 2구역)",
+    "scripture": "요 13 : 12 ~ 20",
+    "sermon": "영혼 구원의 동력",
+    "hymns": ["515장", "354장"]
+  },
+
+  "wednesdayWorship": {
+    "enabled": true,
+    "scripture": "고후 4 : 1 ~ 6",
+    "sermon": "영광스러운 삶"
+  },
+
+  "prayerTopics": [
+    "1. 주님을 기쁘시게, 사람에게 칭찬 듣는 교회.",
+    "2. 성령의 임재로 치유와 회복, 부흥을 주소서",
+    "3. 다음 세대를 세우게 하소서",
+    "4. 날마다 구원받는 수가 더해가게 하소서(3-30-300)",
+    "5. 마중물의 기적이 일어나게 하옵소서. (아프리카 바쿤사 교회)"
+  ],
+
+  "dawnPrayer": {
+    "enabled": true,
+    "title": "얍복강기도회 (5시 50분)",
+    "content": "사순절 요한복음 강해, 잠언통독"
+  },
+
+  "districtWorship": {
+    "enabled": true,
+    "reports": [
+      {
+        "district": "부여구역1",
+        "leader": "서이석",
+        "attendance": 0,
+        "offering": 50000,
+        "scripture": "557",
+        "nextLeader": "이화순"
+      },
+      {
+        "district": "부여구역2",
+        "leader": "이경은",
+        "attendance": 8,
+        "offering": 35000,
+        "scripture": "230",
+        "nextLeader": "심정숙"
+      },
+      {
+        "district": "백강구역",
+        "leader": "김경순",
+        "attendance": 5,
+        "offering": 45000,
+        "scripture": "196",
+        "nextLeader": "최양숙"
+      },
+      {
+        "district": "규암구역",
+        "leader": "이재란",
+        "attendance": 5,
+        "offering": 40000,
+        "scripture": "",
+        "nextLeader": "이화죽"
+      },
+      {
+        "district": "금봉구역",
+        "leader": "임병연",
+        "attendance": 5,
+        "offering": 40000,
+        "scripture": "140",
+        "nextLeader": "문평화"
+      },
+      {
+        "district": "외리구역",
+        "leader": "송옥자",
+        "attendance": 7,
+        "offering": 70000,
+        "scripture": "143",
+        "nextLeader": "황근숙"
+      },
+      {
+        "district": "백자구역",
+        "leader": "고은혜",
+        "attendance": 8,
+        "offering": 45000,
+        "scripture": "197",
+        "nextLeader": "오숙자"
+      },
+      {
+        "district": "내리구역",
+        "leader": "김인순",
+        "attendance": 6,
+        "offering": 35000,
+        "scripture": "220",
+        "nextLeader": "최경자"
+      }
+    ]
+  },
+
+  "announcements": [
+    { "order": 1, "content": "저희 교회에 오신 모든 분들을 진심으로 환영하고 축복합니다." },
+    { "order": 2, "content": "오늘은 사순절 둘째주일입니다.(삼일절 107주년 기념주일입니다.) 사순절기간 성경읽고 묵상하며 절식기도로 주님의 고난에 함께 합시다. 세례교육이 있습니다.(3월 14,21일,토 오후 2시) 세례식3월 29일(종려주일) 고난주간(3월 30일~4월 3일)은 특별새벽기도회입니다. 부활절이웃초청잔치(4월 5일), 부활절성가합창제(4월 12일)" },
+    { "order": 3, "content": "오늘 저녁예배는 3월 선교예배입니다." },
+    { "order": 4, "content": "이번주간 대심방은 백강(수), 규암(목), 금봉구역(금)입니다. 가정에서 받기 어려운 분들은 교회나 다른 장소로 정하셔도 됩니다. 금년도 가정행사, 기도제목, 전도대상을 메모해 두시기 바랍니다." },
+    { "order": 5, "content": "이번주 노방전도는 금요일 오전 10시 30분, 새시장 주변입니다." },
+    { "order": 6, "content": "지방회 교역자 3월 월례회가 3일(화) 부여중앙교회에서 있습니다." },
+    { "order": 7, "content": "지난 주일 등록하신 분(26-3 박명규씨 - 박순화씨 전도)" },
+    { "order": 8, "content": "떡을 대접하는 가정(오세웅 안수집사, 김기옥 권사 딸 결혼식 감사)" }
+  ],
+
+  "memoryVerse": {
+    "text": "여호와를 자기 하나님으로 삼은 나라 곧 하나님의 기업으로 선택된 백성은 복이 있도다.",
+    "reference": "시편 33 : 12"
+  },
+
+  "offerings": {
+    "tithe": [
+      "고승수(이영희)", "고은지", "김경순", "김수부(강봉순)", "박귀원", "박주원", "박창균(조성순)",
+      "심상용(김정숙)", "윤유동(신명순)", "이만재(오수옥)", "이현정", "전길식(이희경)", "전영철(임병연)",
+      "최양숙", "한미나", "홍희자"
+    ],
+    "thousandOffer": [
+      "강봉순", "고승수(이영희)", "고은지", "김금자", "김낙준", "김태희", "박귀원", "박대찬", "박대헌",
+      "박주원", "변태관(이정숙)", "서장원", "송봉수", "심상용(김정숙)", "이경은", "이상덕(박순임)",
+      "조예빈(조현준)", "한봉애", "황근숙"
+    ],
+    "thanks": [
+      "강봉순", "구민혁", "국채호", "김기순", "김영한", "김은자", "김정숙", "박경애", "박순남", "박시온", "박인규",
+      "배인영(박순규)", "배토호", "신인영", "여은석(신문숙)", "유제균(박인규)", "유청환", "윤광옥",
+      "윤여홍(심정숙)", "윤유동(신명순)", "윤유홍(장옥금)", "이경은", "이상덕", "장옥금(윤유홍)", "조동현",
+      "최양숙", "최영근", "표경애", "무명", "무명"
+    ],
+    "mission": [
+      "이경은", "한미나"
+    ],
+    "building": [
+      "윤유동(신명순)", "이생현(문평화)", "이은주"
+    ],
+    "scholarship": [
+      "김정숙", "신명순", "유제균(박인규)"
+    ],
+    "flowers": [
+      "강봉순", "김정숙", "신명순", "오수옥", "이정숙"
+    ]
+  }
+}
