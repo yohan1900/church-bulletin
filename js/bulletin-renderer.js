@@ -438,6 +438,14 @@ class BulletinRenderer {
       html += '</div>';
     }
 
+    // 심방감사
+    if (data.visitThanks && data.visitThanks.length > 0) {
+      html += '<div class="offering-section">';
+      html += '<h3>심방감사</h3>';
+      html += '<p>' + data.visitThanks.join(', ') + '</p>';
+      html += '</div>';
+    }
+
     // 월삭헌금
     if (data.monthly && data.monthly.length > 0) {
       html += '<div class="offering-section">';
