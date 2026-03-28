@@ -1,0 +1,182 @@
+{
+  "date": "2026-03-22",
+  "volume": "6",
+  "issue": "12",
+  "title": "사순절 다섯째주일",
+
+  "morningWorship": {
+    "leader": "이상덕 목사",
+    "order": [
+      { "type": "hymn", "label": "입례송", "content": "635 장 (다같이)" },
+      { "type": "creed", "label": "신앙고백", "content": "사도신경 (다같이)" },
+      { "type": "hymn", "label": "찬송", "content": "448 장 (다같이)" },
+      { "type": "prayer", "label": "기도", "content": "고은혜 집사, 오세웅 안수집사" },
+      { "type": "scripture", "label": "성경봉독", "content": "마태복음 9 : 35 ~ 10 : 1 (사회자)" },
+      { "type": "special", "label": "특송과 봉헌", "content": "비전찬양대 (헌금위원)" },
+      { "type": "news", "label": "교회소식", "content": "담임목사" },
+      { "type": "offeringPrayer", "label": "봉헌기도", "content": "인도자" },
+      { "type": "sermon", "label": "설교", "content": "<strong>역사 재현 단지</strong><br/>이상덕 목사" },
+      { "type": "prayer", "label": "결단기도", "content": "다같이" },
+      { "type": "hymn", "label": "찬송", "content": "452 장 (다같이)" },
+      { "type": "benediction", "label": "축도", "content": "담임목사" }
+    ],
+    "nextWeekPrayer": [
+      { "part": "1부 기도", "person": "김정명 집사" },
+      { "part": "2부 기도", "person": "최윤태 안수집사" }
+    ],
+    "worshipCommittee": {
+      "month": "3월",
+      "ushers": "민경태 권사, 이화순 집사",
+      "offering": "고승수 안수집사, 이정숙 권사"
+    }
+  },
+
+  "eveningWorship": {
+    "enabled": true,
+    "prayer": "이재란 권사 (다음: 최양숙 권사)",
+    "special": "규암 구역 (다음: 외리구역)",
+    "scripture": "출 34 : 1 ~ 9",
+    "sermon": "다시 시작하자",
+    "hymns": ["436장", "354장"]
+  },
+
+  "wednesdayWorship": {
+    "enabled": true,
+    "scripture": "고후 5 : 1 ~ 10",
+    "sermon": "살든지 죽든지"
+  },
+
+  "dawnPrayer": {
+    "enabled": true,
+    "title": "얍복강기도회 (5시 50분)",
+    "content": "사순절 요한복음 강해, 잠언통독"
+  },
+
+  "districtWorship": {
+    "enabled": true,
+    "reports": [
+      {
+        "district": "부여구역1",
+        "leader": "전순영",
+        "attendance": 6,
+        "offering": 45000,
+        "scripture": "476",
+        "nextLeader": "서이석"
+      },
+      {
+        "district": "부여구역2",
+        "leader": "이재선",
+        "attendance": 7,
+        "offering": 35000,
+        "scripture": "242",
+        "nextLeader": "이희경"
+      },
+      {
+        "district": "백강구역",
+        "leader": "김경순",
+        "attendance": 6,
+        "offering": 40000,
+        "scripture": "273",
+        "nextLeader": "이정숙"
+      },
+      {
+        "district": "규암구역",
+        "leader": "",
+        "attendance": 0,
+        "offering": 0,
+        "scripture": "",
+        "nextLeader": ""
+      },
+      {
+        "district": "금봉구역",
+        "leader": "박인규",
+        "attendance": 5,
+        "offering": 40000,
+        "scripture": "125",
+        "nextLeader": "이은주"
+      },
+      {
+        "district": "외리구역",
+        "leader": "김영한",
+        "attendance": 8,
+        "offering": 80000,
+        "scripture": "",
+        "nextLeader": "유순이"
+      },
+      {
+        "district": "백자구역",
+        "leader": "임순석",
+        "attendance": 5,
+        "offering": 35000,
+        "scripture": "101",
+        "nextLeader": ""
+      },
+      {
+        "district": "내리구역",
+        "leader": "한미나",
+        "attendance": 7,
+        "offering": 40000,
+        "scripture": "411",
+        "nextLeader": "이현정"
+      }
+    ]
+  },
+
+  "announcements": [
+    { "order": 1, "content": "저희 교회에 오신 모든 분들을 진심으로 환영하고 축복합니다." },
+    { "order": 2, "content": "오늘은 사순절 다섯째주일입니다.<br/>다음주일은 종려주일입니다.(11시 2부 예배에 세례식이 있습니다)<br/>고난주간(3월 30일~4월 3일)은 특별새벽기도회로 드립니다." },
+    { "order": 3, "content": "부활절이웃초청 새 생명축제(4월 5일, 오전 11시 예배, 예배후 뷔폐식사)<br/>이번주간에 초청장을 발송합니다.(모바일초청 및 직접전달 가능합니다)" },
+    { "order": 4, "content": "제 28회 부여군 부활절연합예배 및 찬양제 - 4월 12일, 주일 오후 6시, 유스호스텔 실내경기장" },
+    { "order": 5, "content": "3월달 심야기도회는 고난주간 4월 3일(금) 8시에 연합예배와 함께 드립니다." },
+    { "order": 6, "content": "이번주 노방전도는 금요일 오전 10시 30분, 새시장 커피콩빵전도입니다." },
+    { "order": 7, "content": "이번 주간 목회자 일정 (교단 전도세미나 참석, 23, 24일, 서울, 신길성결교회)" },
+    { "order": 8, "content": "충청중부아버지학교 77기 지원자를 모집합니다.(4월 18일~5월 16일) 윤유홍 권사 문의" }
+  ],
+
+  "prayerTopics": [
+    "주님을 기쁘시게, 사람에게 칭찬 듣는 교회.",
+    "성령의 임재로 치유와 회복, 부흥을 주소서",
+    "다음 세대를 세우게 하소서",
+    "날마다 구원받는 수가 더해가게 하소서(3-30-300)",
+    "마중물의 기적이 일어나게 하옵소서. (아프리카 바쿤사 교회)"
+  ],
+
+  "memoryVerse": {
+    "text": "예수 그리스도는 어제나 오늘이나 영원토록 동일하시니라",
+    "reference": "히브리서 13장 8절"
+  },
+
+  "offerings": {
+    "tithe": [
+      "권업순", "김금자", "박대찬", "박주원", "이만재(오수옥)", "조성돈(김경옥)", "최혜경", "한미나",
+      "홍희자"
+    ],
+    "thousandOffer": [
+      "고승수(이영희)", "고은지", "권업순", "김금자", "김낙준", "김태희", "박귀원", "박대찬", "박대헌",
+      "박주원", "박창균(조성순)", "서민자(최종성)", "서장원", "송봉수", "심상용(김정숙)", "이경은",
+      "이상덕(박순임)", "조성완", "조수현(윤해식)", "조예빈(조현준)", "최영근(최성근)", "최윤태",
+      "최혜경", "한봉애", "황근숙"
+    ],
+    "thanks": [
+      "국채호(최은아)", "김금자", "김기순", "김명귀", "김수부", "박병성", "박순남", "박순화", "신인영",
+      "유병석(전순영)", "유제균(박인규)", "윤여홍(심정숙)", "이경은", "이생현(문평화)", "이희숙",
+      "정낙규", "최윤태(유순이)", "최혜경", "표경애", "무명"
+    ],
+    "visitThanks": [
+      "고승수(이영희)", "김숙환", "김영한", "박요한(고은혜)", "송옥자", "신복남", "오세웅(김기옥)",
+      "오수옥", "오숙자", "이현정", "한봉애", "홍희자", "황근숙", "무명"
+    ],
+    "mission": [
+      "이만재(오수옥)", "커피어린이선교"
+    ],
+    "flowers": [
+      "권업순", "오수옥"
+    ],
+    "scholarship": [
+      "권업순"
+    ],
+    "relief": [
+      "최양숙"
+    ]
+  }
+}
