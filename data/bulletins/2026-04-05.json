@@ -1,0 +1,130 @@
+{
+  "date": "2026-04-05",
+  "volume": "6",
+  "issue": "14",
+  "title": "부활주일",
+
+  "morningWorship": {
+    "leader": "이상덕 목사",
+    "order": [
+      { "type": "hymn", "label": "시작송", "content": "하늘에 문을 여소서 (다같이)" },
+      { "type": "prayer", "label": "공동기도", "content": "다같이" },
+      { "type": "hymn", "label": "찬송", "content": "약한 나로 강하게 (다같이)" },
+      { "type": "prayer", "label": "기도", "content": "임순석 권사, 박귀원 장로" },
+      { "type": "scripture", "label": "성경봉독", "content": "요한계시록 3 : 20 (사회자)" },
+      { "type": "special", "label": "특송", "content": "비전찬양대" },
+      { "type": "news", "label": "교회소식", "content": "담임목사" },
+      { "type": "video", "label": "영상", "content": "방송실" },
+      { "type": "offeringPrayer", "label": "기도", "content": "인도자" },
+      { "type": "sermon", "label": "설교", "content": "<strong>문 (門, door)</strong><br/>이상덕 목사" },
+      { "type": "prayer", "label": "기도", "content": "다같이" },
+      { "type": "hymn", "label": "찬송", "content": "좋으신 하나님 (다같이)" },
+      { "type": "benediction", "label": "축도", "content": "담임목사" }
+    ],
+    "nextWeekPrayer": [
+      { "part": "1부 기도", "person": "신문숙 집사" },
+      { "part": "2부 기도", "person": "조성돈 장로" }
+    ],
+    "worshipCommittee": {
+      "month": "4월",
+      "ushers": "전길식 권사, 이희경 권사",
+      "offering": "조성돈 장로, 김경옥 권사"
+    }
+  },
+
+  "eveningWorship": {
+    "enabled": true,
+    "info": "부여읍 부활절 연합예배",
+    "location": "부여중앙성결교회",
+    "time": "오후 2시",
+    "sermon": "",
+    "scripture": "",
+    "prayer": "",
+    "hymns": [],
+    "special": ""
+  },
+
+  "wednesdayWorship": {
+    "enabled": true,
+    "scripture": "고후 5 : 11 ~ 21",
+    "sermon": "새로운 피조물"
+  },
+
+  "dawnPrayer": {
+    "enabled": true,
+    "title": "얍복강기도회 (5시 50분)",
+    "content": "요한복음 강해"
+  },
+
+  "districtWorship": {
+    "enabled": true,
+    "info": "연합 구역 예배 및 기도회",
+    "reports": []
+  },
+
+  "announcements": [
+    { "order": 1, "content": "저희 교회에 오신 모든 분들을 진심으로 환영하고 축복합니다." },
+    { "order": 2, "content": "오늘은 주님이 사망권세를 이기고 부활하신 날입니다.<br/>모든 분들의 삶에 봄과 같은 부활의 기쁨이 소생되기를 바랍니다." },
+    { "order": 3, "content": "초청 받아 오신 모든 귀한 분들을 축복하고 응원합니다.<br/>예배 후 즐거운 식사와 교제 시간이 되시기를 바랍니다.(선물 추첨)" },
+    { "order": 4, "content": "오후 2시에 부여중앙성결교회에서 부여읍부활절연합예배가 있습니다." },
+    { "order": 5, "content": "제 28 회 부여군부활절연합예배 및 찬양제가 4월 12일(주일) 오후 6시에 부여 유스호스텔 실내경기장에서 있습니다." },
+    { "order": 6, "content": "길거리전도 및 가정전도가 매주 금요일 10시 30분에 있습니다." },
+    { "order": 7, "content": "전국목회자부인회 수련회가 있습니다.(4월 6일 ~ 8일, 대천성결교회)" }
+  ],
+
+  "prayerTopics": [
+    "주님을 기쁘시게, 사람에게 칭찬 듣는 교회.",
+    "성령의 임재로 치유와 회복, 부흥을 주소서",
+    "다음 세대를 세우게 하소서",
+    "날마다 구원받는 수가 더해가게 하소서(3-30-300)",
+    "마중물의 기적이 일어나게 하옵소서. (아프리카 바쿤사 교회)"
+  ],
+
+  "memoryVerse": {
+    "text": "그러나 이제 그리스도께서 죽은 자 가운데서 다시 살아나사 잠자는 자들의 첫 열매가 되셨도다.",
+    "reference": "고린도전서 15장 20절"
+  },
+
+  "offerings": {
+    "tithe": [
+      "고승수(이영희)", "고은지", "김숙환", "박세철(신현식)", "박에스라", "박창균(조성순)", "서민자",
+      "심삼용(김정숙)", "이생현(문평화)", "이수아", "이재선", "전영철(임병연)", "한미나"
+    ],
+    "thousandOffer": [
+      "김금자", "박귀원", "박대찬", "박대헌", "박주원", "박창균(조성순)", "변태관(이정숙)", "서민자(최종성)",
+      "송봉수", "심상용(김정숙)", "이경은", "이상덕(박순임)", "임순석", "정가윤(정현서)", "조수현(윤해식)",
+      "조예빈(조현준)", "최영근(최성근)", "최윤태", "최혜경", "한봉애", "황근숙"
+    ],
+    "thanks": [
+      "국채호(최은아)", "김수부", "박세철", "신인영", "유제균(박인규)", "윤여홍(심정숙)", "이경은",
+      "전길식(이희경)", "정낙규", "최윤태(유순이)", "최혜경", "무명"
+    ],
+    "building": [
+      "박세철", "윤광옥", "최양숙", "한봉애"
+    ],
+    "flowers": [
+      "김정숙", "이정숙"
+    ],
+    "resurrectionThanks": [
+      "표경애"
+    ],
+    "birthday": [
+      "박주원", "한미나"
+    ],
+    "visitThanks": [
+      "박순남"
+    ],
+    "mission": [
+      "신복남"
+    ],
+    "scholarship": [
+      "김정숙", "유제균(박인규)"
+    ],
+    "relief": [
+      "박순남"
+    ],
+    "newLifeFestival": [
+      "김영한", "윤유홍(장옥금)", "이재란", "이정숙", "한봉애"
+    ]
+  }
+}

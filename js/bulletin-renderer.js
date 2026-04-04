@@ -177,15 +177,14 @@ class BulletinRenderer {
       const tbody = table.querySelector('tbody');
       if (!tbody) return;
 
-      // 문화예배(장소 정보)가 있는 경우 별도 간략 표시
+      // 특별예배(장소 정보)가 있는 경우 장소/시간 표시
       if (data.location) {
         table.style.display = 'table';
-        tbody.innerHTML = `
-          <tr>
-            <th>제목</th>
-            <td>${data.sermon || ''}</td>
-          </tr>
-        `;
+        let locationRows = '';
+        if (data.time) locationRows += `<tr><th>시간</th><td>${data.time}</td></tr>`;
+        locationRows += `<tr><th>장소</th><td>${data.location}</td></tr>`;
+        if (data.sermon) locationRows += `<tr><th>제목</th><td>${data.sermon}</td></tr>`;
+        tbody.innerHTML = locationRows;
         return;
       }
 
@@ -446,6 +445,22 @@ class BulletinRenderer {
       html += '</div>';
     }
 
+    // 부활감사
+    if (data.resurrectionThanks && data.resurrectionThanks.length > 0) {
+      html += '<div class="offering-section">';
+      html += '<h3>부활감사</h3>';
+      html += '<p>' + data.resurrectionThanks.join(', ') + '</p>';
+      html += '</div>';
+    }
+
+    // 생일감사
+    if (data.birthday && data.birthday.length > 0) {
+      html += '<div class="offering-section">';
+      html += '<h3>생일감사</h3>';
+      html += '<p>' + data.birthday.join(', ') + '</p>';
+      html += '</div>';
+    }
+
     // 월삭헌금
     if (data.monthly && data.monthly.length > 0) {
       html += '<div class="offering-section">';
@@ -499,6 +514,14 @@ class BulletinRenderer {
       html += '<div class="offering-section">';
       html += '<h3>꽃꽂이</h3>';
       html += '<p>' + data.flowers.join(', ') + '</p>';
+      html += '</div>';
+    }
+
+    // 새생명축제
+    if (data.newLifeFestival && data.newLifeFestival.length > 0) {
+      html += '<div class="offering-section">';
+      html += '<h3>새생명축제</h3>';
+      html += '<p>' + data.newLifeFestival.join(', ') + '</p>';
       html += '</div>';
     }
 
