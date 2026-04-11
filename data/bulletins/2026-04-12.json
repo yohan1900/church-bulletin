@@ -58,14 +58,14 @@
   "districtWorship": {
     "enabled": true,
     "reports": [
-      { "district": "부여구역1", "location": "신명순", "members": 6, "offering": 40000, "hymn": "665", "nextLocation": "김경옥" },
-      { "district": "부여구역2", "location": "김금자", "members": 7, "offering": 40000, "hymn": "369", "nextLocation": "서민자" },
-      { "district": "백강구역", "location": "신현식", "members": 6, "offering": 40000, "hymn": "338", "nextLocation": "최양숙" },
-      { "district": "규암구역", "location": "강영숙", "members": 6, "offering": 49000, "hymn": "110", "nextLocation": "이재란" },
-      { "district": "금봉구역", "location": "이수아", "members": 7, "offering": 55000, "hymn": "217", "nextLocation": "박영란" },
-      { "district": "외리구역", "location": "강봉순", "members": 7, "offering": 70000, "hymn": "140", "nextLocation": "송옥자" },
-      { "district": "백자구역", "location": "김기옥", "members": 6, "offering": 40000, "hymn": "151", "nextLocation": "노숙자" },
-      { "district": "내리구역", "location": "김인순", "members": 5, "offering": 25000, "hymn": "110", "nextLocation": "박삼규" }
+      { "district": "부여구역1", "leader": "신명순", "attendance": 6, "offering": 40000, "scripture": "665", "nextLeader": "김경옥" },
+      { "district": "부여구역2", "leader": "김금자", "attendance": 7, "offering": 40000, "scripture": "369", "nextLeader": "서민자" },
+      { "district": "백강구역", "leader": "신현식", "attendance": 6, "offering": 40000, "scripture": "338", "nextLeader": "최양숙" },
+      { "district": "규암구역", "leader": "강영숙", "attendance": 6, "offering": 49000, "scripture": "110", "nextLeader": "이재란" },
+      { "district": "금봉구역", "leader": "이수아", "attendance": 7, "offering": 55000, "scripture": "217", "nextLeader": "박영란" },
+      { "district": "외리구역", "leader": "강봉순", "attendance": 7, "offering": 70000, "scripture": "140", "nextLeader": "송옥자" },
+      { "district": "백자구역", "leader": "김기옥", "attendance": 6, "offering": 40000, "scripture": "151", "nextLeader": "노숙자" },
+      { "district": "내리구역", "leader": "김인순", "attendance": 5, "offering": 25000, "scripture": "110", "nextLeader": "박삼규" }
     ]
   },
 
@@ -77,8 +77,7 @@
     { "order": 5, "content": "길거리전도 및 가정전도가 매주 금요일 10시 30분에 있습니다." },
     { "order": 6, "content": "교역자 월례회가 14일(화) 오전 11시에 논티교회에서 있습니다." },
     { "order": 7, "content": "정기 당회가 18일(토) 오후 4시에 목양실에서 있습니다." },
-    { "order": 8, "content": "논산교회 임직예식이 19일(주일) 오후 4시에 있습니다." },
-    { "order": 9, "content": "입원(한미나—어깨 수술, 대전)" }
+    { "order": 8, "content": "입원(한미나—어깨 수술, 대전)" }
   ],
 
   "prayerTopics": [
