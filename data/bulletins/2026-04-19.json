@@ -1,0 +1,126 @@
+{
+  "date": "2026-04-19",
+  "volume": "6",
+  "issue": "16",
+  "title": "",
+
+  "morningWorship": {
+    "leader": "이상덕 목사",
+    "order": [
+      { "type": "hymn", "label": "시작송", "content": "하늘에 문을 여소서 (다같이)" },
+      { "type": "creed", "label": "신앙고백", "content": "사도신경 (다같이)" },
+      { "type": "hymn", "label": "찬송", "content": "393 장 (다같이)" },
+      { "type": "prayer", "label": "기도", "content": "박요한 집사, 유제균 장로" },
+      { "type": "scripture", "label": "성경봉독", "content": "계 3 : 8 (사회자)" },
+      { "type": "special", "label": "특송과 봉헌", "content": "비전찬양대 (헌금위원)" },
+      { "type": "news", "label": "교회소식", "content": "담임목사" },
+      { "type": "offeringPrayer", "label": "기도", "content": "인도자" },
+      { "type": "sermon", "label": "설교", "content": "<strong>성(誠) faithfulness</strong><br/>이상덕 목사" },
+      { "type": "prayer", "label": "기도", "content": "다같이" },
+      { "type": "hymn", "label": "찬송", "content": "사랑합니다 나의 예수님 (다같이)" },
+      { "type": "benediction", "label": "축도", "content": "담임목사" }
+    ],
+    "nextWeekPrayer": [
+      { "part": "1부 기도", "person": "박순남 집사" },
+      { "part": "2부 기도", "person": "박세철 장로" }
+    ],
+    "worshipCommittee": {
+      "month": "4월",
+      "ushers": "전길식 권사, 이희경 권사",
+      "offering": "조성돈 장로, 김경옥 권사"
+    }
+  },
+
+  "eveningWorship": {
+    "enabled": true,
+    "prayer": "이영희 권사 (다음: 박인규 권사)",
+    "special": "백자 구역 (다음: 내리구역)",
+    "scripture": "출 34 : 10 ~ 17",
+    "sermon": "새로운 언약식",
+    "hymns": ["546장", "354장"]
+  },
+
+  "wednesdayWorship": {
+    "enabled": true,
+    "scripture": "고후 6 : 14 ~ 7 : 1",
+    "sermon": "구별되게 살라"
+  },
+
+  "dawnPrayer": {
+    "enabled": true,
+    "title": "얍복강기도회 (5시 50분)",
+    "content": "요한복음 강해"
+  },
+
+  "districtWorship": {
+    "enabled": true,
+    "reports": [
+      { "district": "부여구역1", "leader": "김경옥", "attendance": 7, "offering": 40000, "scripture": "486", "nextLeader": "전순영" },
+      { "district": "부여구역2", "leader": "서민자", "attendance": 8, "offering": 45000, "scripture": "402", "nextLeader": "김신애" },
+      { "district": "백강구역", "leader": "최양숙", "attendance": 6, "offering": 45000, "scripture": "220", "nextLeader": "김정숙" },
+      { "district": "규암구역", "leader": "이재란", "attendance": 5, "offering": 40000, "scripture": "62", "nextLeader": "이화죽" },
+      { "district": "금봉구역", "leader": "임병연", "attendance": 5, "offering": 45000, "scripture": "63", "nextLeader": "문평화" },
+      { "district": "외리구역", "leader": "송옥자", "attendance": 6, "offering": 60000, "scripture": "90", "nextLeader": "황근숙" },
+      { "district": "백자구역", "leader": "오숙자", "attendance": 6, "offering": 45000, "scripture": "127", "nextLeader": "고은혜" },
+      { "district": "내리구역", "leader": "박삼규", "attendance": 6, "offering": 28000, "scripture": "60", "nextLeader": "박정미" }
+    ]
+  },
+
+  "announcements": [
+    { "order": 1, "content": "저희 교회에 오신 모든 분들을 진심으로 환영하고 축복합니다." },
+    { "order": 2, "content": "중보기도하는 전도 대상자들이 구원 받고 각 교회에 정착하도록 기도합시다." },
+    { "order": 3, "content": "지난 주일에 등록하신 분들을 주님의 이름으로 사랑하고 응원합니다.<br/>26-7 노재순씨(박인규권사), 26-8 안춘자씨(민경태권사), 26-9 김동진씨(박삼규성도)<br/>26-10 박재학씨(김기순집사), 26-11 전윤서씨(신명순권사)" },
+    { "order": 4, "content": "논산교회 임직예식이 오늘(19일) 오후 4시에 있습니다." },
+    { "order": 5, "content": "길거리전도 및 축호전도가 매주 금요일 10시 30분에 있습니다." },
+    { "order": 6, "content": "떡을 대접하는 가정 (조성돈 장로, 김경옥 권사) — 새 장막 이사 감사" }
+  ],
+
+  "prayerTopics": [],
+
+  "memoryVerse": {
+    "text": "우리가 알거니와 하나님을 사랑하는 자 곧 그의 뜻대로 부르심을 입은 자들에게는 모든 것이 합력하여 선을 이루느니라.",
+    "reference": "로마서 8장 28절"
+  },
+
+  "offerings": {
+    "tithe": [
+      "김수부(강봉순)", "김신애", "노주애", "박대찬", "박주원", "변태관(이정숙)", "서이석(이은순)",
+      "송옥자", "윤유홍(장옥금)", "이경은", "이상덕(박순임)", "이수아", "이종례", "홍희자", "무명"
+    ],
+    "thousandOffer": [
+      "고승수(이영희)", "김금자", "박귀원", "박대찬", "박대헌", "박주원", "박창균(조성순)", "서민자(최종성)",
+      "송봉수", "심상용(김정숙)", "이경은", "이상덕(박순임)", "정가윤(정현서)", "최영근(최성근)",
+      "한봉애", "황근숙", "무명"
+    ],
+    "thanks": [
+      "김신애", "노주애", "박경애", "송원옥", "신인영", "안춘자", "유제균(박인규)", "윤여홍(심정숙)",
+      "이경은", "정낙규", "최윤태(유순이)", "최혜경", "표경애", "무명"
+    ],
+    "resurrectionThanks": [
+      "김신애", "노주애", "한봉애", "홍희자"
+    ],
+    "newMoon": [
+      "신명순", "양하은", "유남열", "유제균(박인규)", "윤유홍(장옥금)", "이상덕", "이수아", "임순석",
+      "최윤태(유순이)", "한봉애"
+    ],
+    "mission": [
+      "노주애", "박경애", "변태관(이정숙)", "송옥자", "오세웅(김기옥)", "윤유홍(장옥금)", "이경은",
+      "이상덕(박순임)", "이수아", "이종례", "조성돈(김경옥)", "무명"
+    ],
+    "building": [
+      "노주애", "윤광옥", "무명"
+    ],
+    "flowers": [
+      "박순임", "박인규", "장옥금"
+    ],
+    "scholarship": [
+      "이상덕(박순임)"
+    ],
+    "relief": [
+      "이상덕(박순임)"
+    ],
+    "ghanaWell": [
+      "이영희(품비시 농업고등학교)", "이세한(아티에예리 마을)"
+    ]
+  }
+}
