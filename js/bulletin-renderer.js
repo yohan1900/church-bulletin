@@ -435,13 +435,12 @@ class BulletinRenderer {
       html += '<h3>감사헌금</h3>';
       html += '<p>' + data.thanks.join(', ') + '</p>';
       html += '</div>';
-    }
-
-    // 심방감사
-    if (data.visitThanks && data.visitThanks.length > 0) {
+    }    // 심방감사
+    if ((data.visitation && data.visitation.length > 0) || (data.visitThanks && data.visitThanks.length > 0)) {
+      const visitData = data.visitation || data.visitThanks;
       html += '<div class="offering-section">';
       html += '<h3>심방감사</h3>';
-      html += '<p>' + data.visitThanks.join(', ') + '</p>';
+      html += '<p>' + visitData.join(', ') + '</p>';
       html += '</div>';
     }
 
@@ -507,21 +506,26 @@ class BulletinRenderer {
       html += '<h3>구제헌금</h3>';
       html += '<p>' + data.relief.join(', ') + '</p>';
       html += '</div>';
-    }
-
-    // 꽃꽂이
-    if (data.flowers && data.flowers.length > 0) {
+    }    // 꽃꽂이
+    if ((data.flower && data.flower.length > 0) || (data.flowers && data.flowers.length > 0)) {
+      const flowerData = data.flower || data.flowers;
       html += '<div class="offering-section">';
       html += '<h3>꽃꽂이</h3>';
-      html += '<p>' + data.flowers.join(', ') + '</p>';
+      html += '<p>' + flowerData.join(', ') + '</p>';
       html += '</div>';
-    }
-
-    // 새생명축제
+    }    // 새생명축제
     if (data.newLifeFestival && data.newLifeFestival.length > 0) {
       html += '<div class="offering-section">';
       html += '<h3>새생명축제</h3>';
       html += '<p>' + data.newLifeFestival.join(', ') + '</p>';
+      html += '</div>';
+    }
+
+    // 목적헌금
+    if (data.purpose && data.purpose.length > 0) {
+      html += '<div class="offering-section">';
+      html += '<h3>목적헌금</h3>';
+      html += '<p>' + data.purpose.join(', ') + '</p>';
       html += '</div>';
     }
 

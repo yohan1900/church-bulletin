@@ -1,0 +1,189 @@
+{
+  "date": "2026-05-24",
+  "volume": "6",
+  "issue": "21",
+  "title": "성령강림주일",
+
+  "morningWorship": {
+    "leader": "이상덕 목사",
+    "order": [
+      { "type": "hymn", "label": "시작송", "content": "하늘에 문을 여소서 (다같이)" },
+      { "type": "creed", "label": "신앙고백", "content": "사도신경 (다같이)" },
+      { "type": "hymn", "label": "찬송", "content": "188 장 (다같이)" },
+      { "type": "prayer", "label": "기도", "content": "이은주 권사(1부)<br/>조성돈 장로(2부)" },
+      { "type": "scripture", "label": "성경봉독", "content": "눅 4 : 18, 19 (사회자)" },
+      { "type": "special", "label": "특송과 봉헌", "content": "비전찬양대 (헌금위원)" },
+      { "type": "news", "label": "교회소식", "content": "담임목사" },
+      { "type": "offeringPrayer", "label": "기도", "content": "인도자" },
+      { "type": "sermon", "label": "설교", "content": "<strong>유(油, anointing)</strong><br/>이상덕 목사" },
+      { "type": "prayer", "label": "기도", "content": "다같이" },
+      { "type": "hymn", "label": "찬송", "content": "성령 하나님 나를 만지소서 (다같이)" },
+      { "type": "benediction", "label": "축도", "content": "담임목사" }
+    ],
+    "nextWeekPrayer": [
+      { "part": "1부 기도", "person": "이수아 권사" },
+      { "part": "2부 기도", "person": "유제균 장로" }
+    ],
+    "worshipCommittee": {
+      "month": "5월",
+      "ushers": "김수부 권사, 윤유홍 권사",
+      "offering": "박요한 집사, 신명순 권사"
+    }
+  },
+
+  "eveningWorship": {
+    "enabled": true,
+    "prayer": "민경태 권사 (다음: 이경은 집사)",
+    "special": "1여전도회 (다음: 2여전도회)",
+    "scripture": "출 35 : 20 ~ 29",
+    "sermon": "드림의 지혜",
+    "hymns": ["321장", "354장"]
+  },
+
+  "wednesdayWorship": {
+    "enabled": true,
+    "scripture": "고후 8 : 16 ~ 24",
+    "sermon": "함께 가야 할 이유"
+  },
+
+  "dawnPrayer": {
+    "enabled": true,
+    "title": "얍복강 기도회 (5시 50분)",
+    "content": "성경통독 (창세기)"
+  },
+
+  "districtWorship": {
+    "enabled": true,
+    "reports": [
+      {
+        "district": "부여구역1",
+        "leader": "전순영",
+        "attendance": 7,
+        "offering": 55000,
+        "scripture": "409",
+        "nextLeader": "서이석"
+      },
+      {
+        "district": "부여구역2",
+        "leader": "이재선",
+        "attendance": 6,
+        "offering": 38000,
+        "scripture": "223",
+        "nextLeader": ""
+      },
+      {
+        "district": "백강구역",
+        "leader": "김정숙",
+        "attendance": 0,
+        "offering": 55000,
+        "scripture": "255",
+        "nextLeader": "최양숙"
+      },
+      {
+        "district": "규암구역",
+        "leader": "이인자",
+        "attendance": 5,
+        "offering": 40000,
+        "scripture": "106",
+        "nextLeader": "강영숙"
+      },
+      {
+        "district": "금봉구역",
+        "leader": "",
+        "attendance": 0,
+        "offering": 0,
+        "scripture": "",
+        "nextLeader": ""
+      },
+      {
+        "district": "외리구역",
+        "leader": "",
+        "attendance": 0,
+        "offering": 60000,
+        "scripture": "95",
+        "nextLeader": "송옥자"
+      },
+      {
+        "district": "백자구역",
+        "leader": "김기옥",
+        "attendance": 6,
+        "offering": 45000,
+        "scripture": "75",
+        "nextLeader": "오숙자"
+      },
+      {
+        "district": "내리구역",
+        "leader": "김인순",
+        "attendance": 6,
+        "offering": 35000,
+        "scripture": "190",
+        "nextLeader": "박삼규"
+      }
+    ]
+  },
+
+  "prayerTopics": [
+    "주님을 기쁘시게, 사람에게 칭찬 듣는 교회.",
+    "성령의 임재로 치유와 회복, 부흥을 주소서",
+    "다음 세대를 세우게 하소서",
+    "날마다 구원받는 수가 더해가게 하소서(3-30-300)",
+    "마중물의 기적이 일어나게 하옵소서. (아프리카 바쿤사 교회)"
+  ],
+
+  "announcements": [
+    { "order": 1, "content": "저희 교회에 오신 모든 분들을 진심으로 환영하고 축복합니다." },
+    { "order": 2, "content": "오늘은 성령강림절입니다. 성령의 충만을 받기 위해 기도합시다." },
+    { "order": 3, "content": "새벽기도회를 통해 성경통독과 전도대상자 중보기도를 매일 드립시다." },
+    { "order": 4, "content": "거리 전도 및 축호전도를 금요일 오전 10시에 합니다." },
+    { "order": 5, "content": "이번 금요일(29일) 오후 8시에 연합구역예배와 심야기도회가 있습니다." },
+    { "order": 6, "content": "교우소식--(입원 유남열 권사—구로고려대) (떡 대접 유병석, 전순영 집사--결혼식 감사)" },
+    { "order": 7, "content": "새로 등록하신 분이 계십니다.(26-19, 윤경숙 집사, 부여2구역, 3여전도회—자진)" },
+    { "order": 8, "content": "충남지방회 병천교회 임직식이 있습니다(24일, 오후 4시)." },
+    { "order": 9, "content": "6·3 지방선거를 위해 기도하시기 바랍니다." },
+    { "order": 10, "content": "비전 찬양대 야유회가 있습니다.(5월 30일, 토, 9시, 상화원)" },
+    { "order": 11, "content": "전교인 가족 수련회 (7월 31일, 금 ~ 8월 2일, 주일), 서천유스호스텔" }
+  ],
+
+  "memoryVerse": {
+    "text": "무릇 하나님의 영으로 인도함을 받는 사람은 곧 하나님의 아들이라.",
+    "reference": "로마서 8 : 14"
+  },
+
+  "offerings": {
+    "tithe": [
+      "권업순", "김경순", "김금자", "김석수(김영한)", "김수부(강봉순)", "김신애", "박대찬", "박에스라",
+      "박주원", "유사라", "전길식(이희경)", "전영철(임병연)", "한미나", "홍희자", "황근숙"
+    ],
+    "thousandOffer": [
+      "고승수(이영희)", "고은지", "김금자", "김낙준", "김태희", "박귀원", "박대찬", "박대헌", "박주원",
+      "서민자(최종성)", "송봉수", "심삼용(김정숙)", "이경은", "이상덕(박순임)", "정가윤(정현서)",
+      "최영근(최성근)", "최윤태", "최혜경", "한봉애", "황근숙"
+    ],
+    "thanks": [
+      "고승수", "김신애", "김홍만", "문평화", "민채린", "박순남", "박재학", "서장원", "송원옥", "신인영",
+      "안춘자", "유제균(박인규)", "윤여홍(심정숙)", "이경은", "이종래", "장옥금", "전윤서(강유림)", "정낙규",
+      "최윤태(유순이)", "최혜경", "황근숙", "무명", "무명"
+    ],
+    "mission": [
+      "김경순", "김신애", "박명규", "윤광옥"
+    ],
+    "scholarship": [
+      "권업순"
+    ],
+    "flower": [
+      "강봉순", "권업순", "이종래", "황근숙"
+    ],
+    "relief": [
+      "이종래"
+    ],
+    "building": [
+      "김석수(김영한)"
+    ],
+    "visitation": [
+      "박순화"
+    ],
+    "purpose": [
+      "김지훈"
+    ]
+  }
+}
