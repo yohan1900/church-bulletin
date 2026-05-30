@@ -54,6 +54,12 @@
 
   "districtWorship": {
     "enabled": true,
+    "mode": "joint",
+    "jointService": {
+      "enabled": true,
+      "location": "교회",
+      "datetime": "29일(금), 오후 8시"
+    },
     "reports": [
       {
         "district": "부여구역1",

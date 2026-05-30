@@ -383,6 +383,33 @@ class BulletinRenderer {
       return;
     }
 
+    // 연합구역예배 전용 폼
+    if (data.mode === 'joint' && data.jointService && data.jointService.enabled) {
+      const nextPlaces = data.reports
+        .filter(report => report.nextLeader && report.nextLeader.trim() !== '')
+        .map(report => `<tr><td>${report.district}</td><td>${report.nextLeader}</td></tr>`)
+        .join('');
+
+      let jointHtml = '<div class="joint-district-form">';
+      jointHtml += '<h3 class="joint-district-title">연합구역예배</h3>';
+      jointHtml += '<table class="joint-district-table"><tbody>';
+      jointHtml += `<tr><th>장소</th><td>${data.jointService.location || '-'}</td></tr>`;
+      jointHtml += `<tr><th>일시</th><td>${data.jointService.datetime || '-'}</td></tr>`;
+      jointHtml += '</tbody></table>';
+
+      if (nextPlaces) {
+        jointHtml += '<h4 class="joint-next-title">다음장소</h4>';
+        jointHtml += '<table class="district-table">';
+        jointHtml += '<thead><tr><th>구역</th><th>인도자</th></tr></thead>';
+        jointHtml += `<tbody>${nextPlaces}</tbody>`;
+        jointHtml += '</table>';
+      }
+
+      jointHtml += '</div>';
+      container.innerHTML = jointHtml;
+      return;
+    }
+
     let html = '<table class="district-table"><thead><tr>';
     html += '<th>장소</th><th>인원</th><th>헌금</th><th>성경</th><th>다음장소</th>';
     html += '</tr></thead><tbody>';

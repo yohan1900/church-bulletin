@@ -281,6 +281,38 @@ table {
   background-color: #f0f0f0;
 }
 
+.joint-district-form {
+  margin: 20px 0;
+}
+
+.joint-district-title,
+.joint-next-title {
+  margin: 8px 0 12px;
+  color: var(--color-blue);
+}
+
+.joint-district-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 16px;
+}
+
+.joint-district-table th,
+.joint-district-table td {
+  padding: 12px;
+  border: 1px solid slategray;
+}
+
+.joint-district-table th {
+  width: 120px;
+  background-color: #f7fbff;
+  text-align: center;
+}
+
+.joint-district-table td {
+  text-align: left;
+}
+
 /* 봉헌 표시 */
 .offerings-container {
   display: grid;
