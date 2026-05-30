@@ -1,0 +1,188 @@
+{
+  "date": "2026-05-31",
+  "volume": "6",
+  "issue": "22",
+  "title": "",
+
+  "morningWorship": {
+    "leader": "이상덕 목사",
+    "order": [
+      { "type": "hymn", "label": "시작송", "content": "하늘에 문을 여소서 (다같이)" },
+      { "type": "creed", "label": "신앙고백", "content": "사도신경 (다같이)" },
+      { "type": "hymn", "label": "찬송", "content": "88 장 (다같이)" },
+      { "type": "prayer", "label": "기도", "content": "이수아 권사(1부)<br/>유제균 장로(2부)" },
+      { "type": "scripture", "label": "성경봉독", "content": "롬 8 : 26, 27 (사회자)" },
+      { "type": "special", "label": "특송과 봉헌", "content": "비전찬양대 (헌금위원)" },
+      { "type": "news", "label": "교회소식", "content": "담임목사" },
+      { "type": "offeringPrayer", "label": "기도", "content": "인도자" },
+      { "type": "sermon", "label": "설교", "content": "<strong>감 (感, Empathy)</strong><br/>이상덕 목사" },
+      { "type": "prayer", "label": "기도", "content": "다같이" },
+      { "type": "hymn", "label": "찬송", "content": "공감 하시네 (다같이)" },
+      { "type": "benediction", "label": "축도", "content": "담임목사" }
+    ],
+    "nextWeekPrayer": [
+      { "part": "1부 기도", "person": "박요한 집사" },
+      { "part": "2부 기도", "person": "박세철 장로" }
+    ],
+    "worshipCommittee": {
+      "month": "5월",
+      "ushers": "김수부 권사, 윤유홍 권사",
+      "offering": "박요한 집사, 신명순 권사"
+    }
+  },
+
+  "eveningWorship": {
+    "enabled": true,
+    "prayer": "이경은 집사 (다음: 송원옥 집사)",
+    "special": "2여전도회 (다음: 3여전도회)",
+    "scripture": "출 35 : 20 ~ 29",
+    "sermon": "드림의 지혜",
+    "hymns": ["321장", "354장"]
+  },
+
+  "wednesdayWorship": {
+    "enabled": true,
+    "scripture": "고후 10 : 1 ~ 11",
+    "sermon": "그리스도에게 속한 자"
+  },
+
+  "dawnPrayer": {
+    "enabled": true,
+    "title": "얍복강 기도회 (5시 50분)",
+    "content": "성경통독 (창세기)"
+  },
+
+  "districtWorship": {
+    "enabled": true,
+    "reports": [
+      {
+        "district": "부여구역1",
+        "leader": "",
+        "attendance": 0,
+        "offering": 0,
+        "scripture": "",
+        "nextLeader": "서이석"
+      },
+      {
+        "district": "부여구역2",
+        "leader": "",
+        "attendance": 0,
+        "offering": 0,
+        "scripture": "",
+        "nextLeader": ""
+      },
+      {
+        "district": "백강구역",
+        "leader": "",
+        "attendance": 0,
+        "offering": 0,
+        "scripture": "",
+        "nextLeader": "최양숙"
+      },
+      {
+        "district": "규암구역",
+        "leader": "",
+        "attendance": 0,
+        "offering": 0,
+        "scripture": "",
+        "nextLeader": "강영숙"
+      },
+      {
+        "district": "금봉구역",
+        "leader": "",
+        "attendance": 0,
+        "offering": 0,
+        "scripture": "",
+        "nextLeader": ""
+      },
+      {
+        "district": "외리구역",
+        "leader": "",
+        "attendance": 0,
+        "offering": 0,
+        "scripture": "",
+        "nextLeader": ""
+      },
+      {
+        "district": "백자구역",
+        "leader": "",
+        "attendance": 0,
+        "offering": 0,
+        "scripture": "",
+        "nextLeader": "오숙자"
+      },
+      {
+        "district": "내리구역",
+        "leader": "",
+        "attendance": 0,
+        "offering": 0,
+        "scripture": "",
+        "nextLeader": "박삼규"
+      }
+    ]
+  },
+
+  "prayerTopics": [
+    "주님을 기쁘시게, 사람에게 칭찬 듣는 교회.",
+    "성령의 임재로 치유와 회복, 부흥을 주소서",
+    "다음 세대를 세우게 하소서",
+    "날마다 구원받는 수가 더해가게 하소서(3-30-300)",
+    "마중물의 기적이 일어나게 하옵소서. (아프리카 바쿤사 교회)"
+  ],
+
+  "announcements": [
+    { "order": 1, "content": "저희 교회에 오신 모든 분들을 진심으로 환영하고 축복합니다." },
+    { "order": 2, "content": "성경통독과 전도대상자를 위해 매일 새벽을 깨워 드립시다." },
+    { "order": 3, "content": "6.3 지방선거를 위해 기도하시기 바랍니다." },
+    { "order": 4, "content": "떡 대접하는 가정: 정민재 집사 (순조로운 장례식 감사)" },
+    {
+      "order": 5,
+      "content": "6월의 목양 계획 및 행사 일정입니다.<br/><table style='width:100%; border-collapse:collapse; text-align:left;'><thead><tr><th style='border:1px solid #ddd; padding:6px;'>일시</th><th style='border:1px solid #ddd; padding:6px;'>내용</th><th style='border:1px solid #ddd; padding:6px;'>일시</th><th style='border:1px solid #ddd; padding:6px;'>내용</th></tr></thead><tbody><tr><td style='border:1px solid #ddd; padding:6px;'>1일(월), 5:50</td><td style='border:1px solid #ddd; padding:6px;'>월삭일, 본교회</td><td style='border:1px solid #ddd; padding:6px;'>16일(화), 20:00</td><td style='border:1px solid #ddd; padding:6px;'>장로세미나, 논산성결</td></tr><tr><td style='border:1px solid #ddd; padding:6px;'>3일(수), 10:00</td><td style='border:1px solid #ddd; padding:6px;'>전교인수련회 답사</td><td style='border:1px solid #ddd; padding:6px;'>20일(토), 11:00</td><td style='border:1px solid #ddd; padding:6px;'>남전도회연합, 본교회</td></tr><tr><td style='border:1px solid #ddd; padding:6px;'>7일(주), 19:30</td><td style='border:1px solid #ddd; padding:6px;'>선교예배, 본교회</td><td style='border:1px solid #ddd; padding:6px;'>28일(주), 11:00</td><td style='border:1px solid #ddd; padding:6px;'>직원회</td></tr><tr><td style='border:1px solid #ddd; padding:6px;'>9일(화), 11:00</td><td style='border:1px solid #ddd; padding:6px;'>교역자월례회, 본교회</td><td style='border:1px solid #ddd; padding:6px;'></td><td style='border:1px solid #ddd; padding:6px;'></td></tr></tbody></table>"
+    },
+    { "order": 6, "content": "전교인 가족 수련회 (7월 31일, 금 ~ 8월 2일, 주일), 서천유스호스텔" },
+    { "order": 7, "content": "현장답사 (6월 3일, 10시, 장항유스호스텔 및 주변, 준비위원)" },
+    { "order": 8, "content": "6월 예배위원 - 안내: 조성돈 장로, 김경옥 권사 / 헌금: 유제균 장로, 박인규 권사" }
+  ],
+
+  "memoryVerse": {
+    "text": "우리에게 있는 대제사장은 우리의 연약함을 동정하지 못하실 이가 아니요 모든 일에 우리와 똑같이 시험을 받으신 이로되 죄는 없으시니라.",
+    "reference": "히브리서 4 : 16"
+  },
+
+  "offerings": {
+    "tithe": [
+      "김신애", "박귀원(이은주)", "박대찬", "서민자", "심정숙", "양환식(조복랑)", "윤유동(신명순)",
+      "이생현(문평화)", "이수아", "이현정", "전길식(이희경)", "조성돈(김경옥)", "한미나", "홍희자"
+    ],
+    "thousandOffer": [
+      "강봉순", "고승수(이영희)", "고은지", "권업순", "김금자", "김낙준", "김태희", "박귀원", "박대찬",
+      "박대헌", "박주원", "박창균(조성순)", "변태관(이정숙)", "서민자(최종성)", "송봉수", "심삼용(김정숙)",
+      "이경은", "이상덕(박순임)", "정가윤(정현서)", "최영근(최성근)", "최윤태", "최혜경", "한봉애", "황근숙"
+    ],
+    "thanks": [
+      "국채호(최은아)", "김신애", "박순남", "배토호", "유제균(박인규)", "윤여홍(심정숙)",
+      "이해령(윤광옥)", "정낙규", "최윤태(유순이)", "최혜경", "표경애", "한미나"
+    ],
+    "building": [
+      "김정훈", "송규성", "윤유동(신명순)", "이은주"
+    ],
+    "mission": [
+      "김신애", "박명규", "한미나"
+    ],
+    "resurrection": [
+      "김인순", "박삼규", "박정미", "최경자"
+    ],
+    "relief": [
+      "신명순", "유제균(박인규)"
+    ],
+    "flower": [
+      "신명순", "이은주", "이종숙"
+    ],
+    "platformDecor": [
+      "김기옥"
+    ],
+    "scholarship": [
+      "신명순"
+    ]
+  }
+}
