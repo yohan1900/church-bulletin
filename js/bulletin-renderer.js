@@ -400,7 +400,7 @@ class BulletinRenderer {
       if (nextPlaces) {
         jointHtml += '<h4 class="joint-next-title">다음장소</h4>';
         jointHtml += '<table class="district-table">';
-        jointHtml += '<thead><tr><th>구역</th><th>인도자</th></tr></thead>';
+        jointHtml += '<thead><tr><th>구역</th><th>다음장소</th></tr></thead>';
         jointHtml += `<tbody>${nextPlaces}</tbody>`;
         jointHtml += '</table>';
       }
@@ -438,123 +438,53 @@ class BulletinRenderer {
       return;
     }
 
+    const getOfferingList = (keys) => {
+      for (const key of keys) {
+        if (Array.isArray(data[key]) && data[key].length > 0) {
+          return data[key];
+        }
+      }
+      return null;
+    };
+
+    const offeringSections = [
+      { label: '십일조', keys: ['tithe'] },
+      { label: '일천번제', keys: ['thousandOffer'] },
+      { label: '감사헌금', keys: ['thanks'] },
+      { label: '심방감사', keys: ['visitation', 'visitThanks'] },
+      { label: '부활감사', keys: ['resurrectionThanks', 'resurrection'] },
+      { label: '생일감사', keys: ['birthday', 'birthdayThanks'] },
+      { label: '월삭헌금', keys: ['monthly', 'newMoon'] },
+      { label: '금식헌금', keys: ['fasting'] },
+      { label: '금식감사', keys: ['fastingThanks'] },
+      { label: '건축헌금', keys: ['building'] },
+      { label: '선교헌금', keys: ['mission'] },
+      { label: '어린이선교', keys: ['childrenMission'] },
+      { label: '카페선교', keys: ['cafeMission'] },
+      { label: '장학헌금', keys: ['scholarship'] },
+      { label: '구제헌금', keys: ['relief'] },
+      { label: '강단화분', keys: ['platformDecor'] },
+      { label: '꽃꽂이', keys: ['flower', 'flowers'] },
+      { label: '차량헌금', keys: ['vehicles'] },
+      { label: '가나우물', keys: ['ghanaWell'] },
+      { label: '가나식수', keys: ['ghanaWater'] },
+      { label: '새생명축제', keys: ['newLifeFestival'] },
+      { label: '목적헌금', keys: ['purpose'] }
+    ];
+
     let html = '<div class="offerings-container">';
-    
-    // 십일조
-    if (data.tithe && data.tithe.length > 0) {
-      html += '<div class="offering-section">';
-      html += '<h3>십일조</h3>';
-      html += '<p>' + data.tithe.join(', ') + '</p>';
-      html += '</div>';
-    }
 
-    // 천 번제
-    if (data.thousandOffer && data.thousandOffer.length > 0) {
-      html += '<div class="offering-section">';
-      html += '<h3>일천번제</h3>';
-      html += '<p>' + data.thousandOffer.join(', ') + '</p>';
-      html += '</div>';
-    }
+    offeringSections.forEach(section => {
+      const values = getOfferingList(section.keys);
+      if (!values) {
+        return;
+      }
 
-    // 감사헌금
-    if (data.thanks && data.thanks.length > 0) {
       html += '<div class="offering-section">';
-      html += '<h3>감사헌금</h3>';
-      html += '<p>' + data.thanks.join(', ') + '</p>';
+      html += `<h3>${section.label}</h3>`;
+      html += '<p>' + values.join(', ') + '</p>';
       html += '</div>';
-    }    // 심방감사
-    if ((data.visitation && data.visitation.length > 0) || (data.visitThanks && data.visitThanks.length > 0)) {
-      const visitData = data.visitation || data.visitThanks;
-      html += '<div class="offering-section">';
-      html += '<h3>심방감사</h3>';
-      html += '<p>' + visitData.join(', ') + '</p>';
-      html += '</div>';
-    }
-
-    // 부활감사
-    if (data.resurrectionThanks && data.resurrectionThanks.length > 0) {
-      html += '<div class="offering-section">';
-      html += '<h3>부활감사</h3>';
-      html += '<p>' + data.resurrectionThanks.join(', ') + '</p>';
-      html += '</div>';
-    }
-
-    // 생일감사
-    if (data.birthday && data.birthday.length > 0) {
-      html += '<div class="offering-section">';
-      html += '<h3>생일감사</h3>';
-      html += '<p>' + data.birthday.join(', ') + '</p>';
-      html += '</div>';
-    }
-
-    // 월삭헌금
-    if (data.monthly && data.monthly.length > 0) {
-      html += '<div class="offering-section">';
-      html += '<h3>월삭헌금</h3>';
-      html += '<p>' + data.monthly.join(', ') + '</p>';
-      html += '</div>';
-    }
-
-    // 건축헌금
-    if (data.building && data.building.length > 0) {
-      html += '<div class="offering-section">';
-      html += '<h3>건축헌금</h3>';
-      html += '<p>' + data.building.join(', ') + '</p>';
-      html += '</div>';
-    }
-
-    // 선교헌금
-    if (data.mission && data.mission.length > 0) {
-      html += '<div class="offering-section">';
-      html += '<h3>선교헌금</h3>';
-      html += '<p>' + data.mission.join(', ') + '</p>';
-      html += '</div>';
-    }
-
-    // 어린이선교
-    if (data.childrenMission && data.childrenMission.length > 0) {
-      html += '<div class="offering-section">';
-      html += '<h3>어린이선교</h3>';
-      html += '<p>' + data.childrenMission.join(', ') + '</p>';
-      html += '</div>';
-    }
-
-    // 장학헌금
-    if (data.scholarship && data.scholarship.length > 0) {
-      html += '<div class="offering-section">';
-      html += '<h3>장학헌금</h3>';
-      html += '<p>' + data.scholarship.join(', ') + '</p>';
-      html += '</div>';
-    }
-
-    // 구제헌금
-    if (data.relief && data.relief.length > 0) {
-      html += '<div class="offering-section">';
-      html += '<h3>구제헌금</h3>';
-      html += '<p>' + data.relief.join(', ') + '</p>';
-      html += '</div>';
-    }    // 꽃꽂이
-    if ((data.flower && data.flower.length > 0) || (data.flowers && data.flowers.length > 0)) {
-      const flowerData = data.flower || data.flowers;
-      html += '<div class="offering-section">';
-      html += '<h3>꽃꽂이</h3>';
-      html += '<p>' + flowerData.join(', ') + '</p>';
-      html += '</div>';
-    }    // 새생명축제
-    if (data.newLifeFestival && data.newLifeFestival.length > 0) {
-      html += '<div class="offering-section">';
-      html += '<h3>새생명축제</h3>';
-      html += '<p>' + data.newLifeFestival.join(', ') + '</p>';
-      html += '</div>';
-    }
-
-    // 목적헌금
-    if (data.purpose && data.purpose.length > 0) {
-      html += '<div class="offering-section">';
-      html += '<h3>목적헌금</h3>';
-      html += '<p>' + data.purpose.join(', ') + '</p>';
-      html += '</div>';
-    }
+    });
 
     html += '</div>';
     
