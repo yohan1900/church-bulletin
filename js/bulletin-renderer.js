@@ -460,7 +460,7 @@ class BulletinRenderer {
       { label: '건축헌금', keys: ['building'] },
       { label: '선교헌금', keys: ['mission'] },
       { label: '어린이선교', keys: ['childrenMission'] },
-      { label: '카페선교', keys: ['cafeMission'] },
+      { label: '카페헌금', keys: ['cafeMission'] },
       { label: '장학헌금', keys: ['scholarship'] },
       { label: '구제헌금', keys: ['relief'] },
       { label: '강단화분', keys: ['platformDecor'] },
