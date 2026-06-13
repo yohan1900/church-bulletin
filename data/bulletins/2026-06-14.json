@@ -42,6 +42,11 @@
         "content": "담임목사"
       },
       {
+        "type": "special_worship",
+        "label": "특송",
+        "content": "유재일, 박주연"
+      },
+      {
         "type": "offeringPrayer",
         "label": "기도",
         "content": "인도자"
