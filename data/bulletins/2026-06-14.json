@@ -130,11 +130,11 @@
       },
       {
         "district": "백강구역",
-        "leader": "",
-        "attendance": 0,
-        "offering": 0,
-        "scripture": "",
-        "nextLeader": ""
+        "leader": "김경순",
+        "attendance": 6,
+        "offering": 45000,
+        "scripture": "126",
+        "nextLeader": "이정숙"
       },
       {
         "district": "규암구역",
