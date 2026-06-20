@@ -109,11 +109,11 @@
     "reports": [
       {
         "district": "부여구역1",
-        "leader": "",
-        "attendance": "",
-        "offering": "",
-        "scripture": "",
-        "nextLeader": ""
+        "leader": "조성순",
+        "attendance": "7",
+        "offering": "50,000",
+        "scripture": "431",
+        "nextLeader": "신명순"
       },
       {
         "district": "부여구역2",
