@@ -451,6 +451,7 @@ class BulletinRenderer {
       { label: '십일조', keys: ['tithe'] },
       { label: '일천번제', keys: ['thousandOffer'] },
       { label: '감사헌금', keys: ['thanks'] },
+      { label: '맥추감사', keys: ['firstfruitsThanks', 'firstFruitsThanks', 'firstfruits', 'firstFruits'] },
       { label: '심방감사', keys: ['visitation', 'visitThanks'] },
       { label: '부활감사', keys: ['resurrectionThanks', 'resurrection'] },
       { label: '생일감사', keys: ['birthday', 'birthdayThanks'] },
