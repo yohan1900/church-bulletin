@@ -468,7 +468,7 @@ class BulletinRenderer {
       { label: '꽃꽂이', keys: ['flower', 'flowers'] },
       { label: '차량헌금', keys: ['vehicles'] },
       { label: '가나우물', keys: ['ghanaWell'] },
-      { label: '가나식수', keys: ['ghanaWater'] },
+      { label: '가나지하수', keys: ['ghanaWater'] },
       { label: '새생명축제', keys: ['newLifeFestival'] },
       { label: '목적헌금', keys: ['purpose'] }
     ];
