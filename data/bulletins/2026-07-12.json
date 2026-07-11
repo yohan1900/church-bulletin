@@ -12,9 +12,14 @@
         "content": "하늘에 문을 여소서 (다같이)"
       },
       {
-        "type": "creed",
-        "label": "신앙고백",
-        "content": "사도신경 (다같이)"
+        "type": "responsive",
+        "label": "성시교독",
+        "content": "1번 시편 1편 (다같이)"
+      },
+      {
+        "type": "repentance",
+        "label": "참회기도",
+        "content": "다같이"
       },
       {
         "type": "hymn",
@@ -23,7 +28,7 @@
       },
       {
         "type": "prayer",
-        "label": "기도",
+        "label": "대표기도",
         "content": "전길식 권사(1부)<br/>유제균 장로(2부)"
       },
       {
@@ -33,8 +38,13 @@
       },
       {
         "type": "special",
-        "label": "특송과 봉헌",
-        "content": "비전찬양대 (헌금위원)"
+        "label": "특송",
+        "content": "비전찬양대"
+      },
+      {
+        "type": "offering",
+        "label": "봉헌",
+        "content": "383장 (헌금위원)"
       },
       {
         "type": "news",
@@ -54,11 +64,11 @@
       {
         "type": "hymn",
         "label": "찬송",
-        "content": "496장, 내 이름 아시죠 (다같이)"
+        "content": "내 이름 아시죠 (다같이)"
       },
       {
         "type": "benediction",
-        "label": "축도",
+        "label": "축복기도",
         "content": "담임목사"
       }
     ],
