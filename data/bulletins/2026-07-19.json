@@ -162,11 +162,11 @@
       },
       {
         "district": "백자구역",
-        "leader": "",
-        "attendance": "",
-        "offering": "",
-        "scripture": "",
-        "nextLeader": ""
+        "leader": "오수옥",
+        "attendance": "5",
+        "offering": "35000",
+        "scripture": "115",
+        "nextLeader": "임순석"
       },
       {
         "district": "내리구역",
