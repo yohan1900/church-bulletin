@@ -137,6 +137,11 @@ p {
   border-color: var(--color-white);
 }
 
+.navbar__menu__item--external a {
+  display: block;
+  color: var(--color-white);
+}
+
 .navbar__toggle-btn {
   position: absolute;
   right: 32px;
