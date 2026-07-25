@@ -1,0 +1,296 @@
+{
+  "date": "2026-07-26",
+  "volume": "6",
+  "issue": "30",
+  "title": "",
+  "morningWorship": {
+    "leader": "이상덕 목사",
+    "order": [
+      {
+        "type": "hymn",
+        "label": "시작송",
+        "content": "하늘에 문을 여소서 (다같이)"
+      },
+      {
+        "type": "responsive",
+        "label": "성시교독",
+        "content": "3번 시편 4편 (다같이)"
+      },
+      {
+        "type": "repentance",
+        "label": "참회기도",
+        "content": "다같이"
+      },
+      {
+        "type": "hymn",
+        "label": "찬송",
+        "content": "419장 (다같이)"
+      },
+      {
+        "type": "prayer",
+        "label": "중보기도",
+        "content": "고승수 안수집사"
+      },
+      {
+        "type": "scripture",
+        "label": "성경봉독",
+        "content": "마 11 : 28---30 (사회자)"
+      },
+      {
+        "type": "special",
+        "label": "특송",
+        "content": "비전찬양대"
+      },
+      {
+        "type": "news",
+        "label": "교회소식",
+        "content": "담임목사"
+      },
+      {
+        "type": "offering",
+        "label": "봉헌",
+        "content": "383장 (위원)"
+      },
+      {
+        "type": "pastoralPrayer",
+        "label": "목양기도",
+        "content": "인도자"
+      },
+      {
+        "type": "sermon",
+        "label": "설교",
+        "content": "<strong>쉼 (休) 2</strong><br/>이상덕 목사"
+      },
+      {
+        "type": "hymn",
+        "label": "찬송",
+        "content": "430, 390장 (다같이)"
+      },
+      {
+        "type": "benediction",
+        "label": "축복기도",
+        "content": "담임목사"
+      }
+    ],
+    "nextWeekPrayer": [
+      {
+        "part": "1부 기도",
+        "person": ""
+      },
+      {
+        "part": "2부 기도",
+        "person": "오세웅 안수집사"
+      }
+    ],
+    "worshipCommittee": {
+      "month": "7월",
+      "ushers": "최윤태 안수집사, 유순이 권사",
+      "offering": "고승수 안수집사, 신명순 권사"
+    }
+  },
+  "eveningWorship": {
+    "enabled": true,
+    "prayer": "이재란 권사 (다음: 전길식 권사)",
+    "special": "외리 구역 (다음: 백제 구역)",
+    "scripture": "출 38 : 9---20",
+    "sermon": "성막 마당(뜰)",
+    "hymns": [
+      "435장",
+      "354장"
+    ]
+  },
+  "wednesdayWorship": {
+    "enabled": true,
+    "scripture": "느 2 : 1---20",
+    "sermon": "하늘나라 재건"
+  },
+  "dawnPrayer": {
+    "enabled": true,
+    "title": "새벽기도회 (얍복강 기도회 5시 50분)",
+    "content": "성경통독 (출애굽기)"
+  },
+  "districtWorship": {
+    "enabled": true,
+    "reports": [
+      {
+        "district": "부여구역1",
+        "leader": "김경옥",
+        "attendance": 7,
+        "offering": 45000,
+        "scripture": "398",
+        "nextLeader": ""
+      },
+      {
+        "district": "부여구역2",
+        "leader": "이재선",
+        "attendance": 7,
+        "offering": 35000,
+        "scripture": "323",
+        "nextLeader": ""
+      },
+      {
+        "district": "백강구역",
+        "leader": "이정숙",
+        "attendance": 8,
+        "offering": 61000,
+        "scripture": "251",
+        "nextLeader": ""
+      },
+      {
+        "district": "규암구역",
+        "leader": "",
+        "attendance": "",
+        "offering": "",
+        "scripture": "",
+        "nextLeader": ""
+      },
+      {
+        "district": "금봉구역",
+        "leader": "",
+        "attendance": "",
+        "offering": "",
+        "scripture": "",
+        "nextLeader": ""
+      },
+      {
+        "district": "외리구역",
+        "leader": "황근숙",
+        "attendance": 6,
+        "offering": 60000,
+        "scripture": "",
+        "nextLeader": ""
+      },
+      {
+        "district": "백자구역",
+        "leader": "임순석",
+        "attendance": "4",
+        "offering": "35000",
+        "scripture": "100",
+        "nextLeader": ""
+      },
+      {
+        "district": "내리구역",
+        "leader": "박삼규",
+        "attendance": 6,
+        "offering": 40000,
+        "scripture": "395",
+        "nextLeader": ""
+      }
+    ]
+  },
+  "prayerTopics": [
+    "주님을 기쁘시게, 사람에게 칭찬 듣는 교회.",
+    "성령의 임재로 치유와 회복, 부흥을 주소서",
+    "다음 세대를 세우게 하소서",
+    "날마다 구원받는 수가 더해가게 하소서(3-30-300)",
+    "마중물의 기적이 일어나게 하옵소서. (아프리카 바쿤사 교회)"
+  ],
+  "announcements": [
+    {
+      "order": 1,
+      "content": "저희 교회에 오신 모든 분들을 진심으로 환영하고 축복합니다.<br/>처음 오셨거나 등록하신분들을 최선을 다해 돕겠습니다."
+    },
+    {
+      "order": 2,
+      "content": "2부 예배 후에 1여전도회 월례회가 유아실에서 있습니다."
+    },
+    {
+      "order": 3,
+      "content": "이번 주간부터 8월 한달동안 거리 전도와 구역예배를 쉬도록 하겠습니다."
+    },
+    {
+      "order": 4,
+      "content": "전교인 가족 수련회 (7월 31일, 금 ~ 8월 2일, 주일), 서천유스호스텔<br/>- 수련회 출발: 31일(금) 10시30분까지 집결<br/>- 개인물병을 지참하시기 바랍니다."
+    },
+    {
+      "order": 5,
+      "content": "8월의 행사 - 월삭예배(수련회), 담임목사 휴가(8월 3일~8일), 레마모임(12,13일)<br/>광복절 기도회(15일 새벽), 부여군연합부흥회(16~19일) 기도해 주시기 바랍니다."
+    },
+    {
+      "order": 6,
+      "content": "떡 대접하는 분(무명가정) 은혜롭고 유익한 수련회가 되기를 응원하는 떡입니다."
+    },
+    {
+      "order": 7,
+      "content": "새로 등록하신 분 (26-23) 정정순 집사, 김금자 권사 전도, 2여, 부여2구역"
+    },
+    {
+      "order": 8,
+      "content": "지방회 소속 장벌 교회 담임목사 취임식이 오늘 오후 4시에 있습니다."
+    },
+    {
+      "order": 9,
+      "content": "8월 예배위원 (안내) 유제균 장로, 박인규 권사 / (헌금) 김정명 집사, 이경은 집사"
+    }
+  ],
+  "memoryVerse": {
+    "text": "나의 영혼아 잠잠히 하나님만 바라라. 무릇 나의 소망이 그로부터 나오는도다.",
+    "reference": "시62:5"
+  },
+  "offerings": {
+    "tithe": [
+      "김경순",
+      "박에스더",
+      "박에스라",
+      "유병석",
+      "임순석",
+      "최혜경"
+    ],
+    "thousandOffer": [
+      "김금자",
+      "김막준",
+      "김태희",
+      "박귀원",
+      "박대찬",
+      "박대헌",
+      "박주원",
+      "박창균(조성순)",
+      "서민자",
+      "송봉수",
+      "심삼용(김정숙)",
+      "이경은",
+      "이상덕(박순임)",
+      "최영근(최성근)",
+      "최윤태(유순이)",
+      "최혜경",
+      "황근숙"
+    ],
+    "thanks": [
+      "김경순",
+      "박순남",
+      "신인영",
+      "심정숙",
+      "유병석(전순영)",
+      "유제균(박인규)",
+      "이경은",
+      "이종래",
+      "최윤태(유순이)",
+      "무명"
+    ],
+    "mission": [
+      "박명규"
+    ],
+    "relief": [
+      "유제균(박인규)"
+    ],
+    "firstfruitsThanks": [
+      "유병석(전순영)"
+    ],
+    "birthday": [
+      "김금자",
+      "홍희자"
+    ],
+    "purpose": [
+      "문평화",
+      "박세철",
+      "변태관",
+      "송옥자",
+      "오수옥",
+      "유병석",
+      "윤유홍(장옥금)",
+      "이재란",
+      "임순석",
+      "조성돈(김경옥)"
+    ]
+  }
+}
