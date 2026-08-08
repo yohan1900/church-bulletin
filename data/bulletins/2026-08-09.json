@@ -1,0 +1,219 @@
+{
+  "date": "2026-08-09",
+  "volume": "6",
+  "issue": "32",
+  "title": "",
+  "morningWorship": {
+    "leader": "이상덕 목사",
+    "order": [
+      {
+        "type": "hymn",
+        "label": "시작송",
+        "content": "하늘에 문을 여소서 (다같이)"
+      },
+      {
+        "type": "responsive",
+        "label": "성시교독",
+        "content": "4번 시편 5편 (다같이)"
+      },
+      {
+        "type": "repentance",
+        "label": "참회기도",
+        "content": "다같이"
+      },
+      {
+        "type": "hymn",
+        "label": "찬송",
+        "content": "386장 (다같이)"
+      },
+      {
+        "type": "prayer",
+        "label": "중보기도",
+        "content": "최윤태 안수집사"
+      },
+      {
+        "type": "scripture",
+        "label": "성경봉독",
+        "content": "시 121 : 1---8 (사회자)"
+      },
+      {
+        "type": "special",
+        "label": "특송",
+        "content": "비전찬양대"
+      },
+      {
+        "type": "news",
+        "label": "교회소식",
+        "content": "담임목사"
+      },
+      {
+        "type": "offering",
+        "label": "봉헌",
+        "content": "383장 (위원)"
+      },
+      {
+        "type": "pastoralPrayer",
+        "label": "목양기도",
+        "content": "인도자"
+      },
+      {
+        "type": "sermon",
+        "label": "설교",
+        "content": "내가 너를 지키리라<br/>이상덕 목사"
+      },
+      {
+        "type": "hymn",
+        "label": "찬송",
+        "content": "하나님은 너를 지키시는 자 (다같이)"
+      },
+      {
+        "type": "benediction",
+        "label": "축복기도",
+        "content": "담임목사"
+      }
+    ],
+    "nextWeekPrayer": [
+      {
+        "part": "1부 기도",
+        "person": "전길식 권사"
+      },
+      {
+        "part": "2부 기도",
+        "person": "박귀원 장로"
+      }
+    ],
+    "worshipCommittee": {
+      "month": "8월",
+      "ushers": "유제균 장로, 박인규 권사",
+      "offering": "유병석 집사, 이경은 집사"
+    }
+  },
+  "eveningWorship": {
+    "enabled": true,
+    "info": "8월 선교예배",
+    "special": "백자 구역 (다음: 내리 구역)",
+    "scripture": "창 39 : 1---6",
+    "sermon": "선교적인 삶",
+    "hymns": [
+      "520장",
+      "354장"
+    ]
+  },
+  "wednesdayWorship": {
+    "enabled": true,
+    "scripture": "느 2 : 11---20",
+    "sermon": "하늘나라 재건 2)"
+  },
+  "dawnPrayer": {
+    "enabled": true,
+    "title": "새벽기도회 (얍복강 기도회 5시 50분)",
+    "content": "성경통독 (출애굽기)"
+  },
+  "districtWorship": {
+    "enabled": false
+  },
+  "prayerTopics": [],
+  "announcements": [
+    {
+      "order": 1,
+      "content": "저희 교회에 오신 모든 분들을 진심으로 환영하고 축복합니다.<br/>처음 오셨거나 등록하신분들을 최선을 다해 돕겠습니다."
+    },
+    {
+      "order": 2,
+      "content": "오늘 저녁예배는 8월 선교예배로 드립니다."
+    },
+    {
+      "order": 3,
+      "content": "다음 주일 저녁예배 광복절 특별기도회입니다."
+    },
+    {
+      "order": 4,
+      "content": "전국 여전도회 연합회 1일 수련회(18일, 화, 서울) -- 박인규 권사께 신청"
+    },
+    {
+      "order": 5,
+      "content": "부여군연합성회(8월 23~26일, 동남교회, 새벽5시, 오전10시30분, 저녁7시30분)"
+    },
+    {
+      "order": 6,
+      "content": "새로 등록하신 분(임주현(26-24), 박에스라 전도, 청년)"
+    },
+    {
+      "order": 7,
+      "content": "입원하신 분(신복남 권사—부여노인주간보호센타)"
+    }
+  ],
+  "memoryVerse": {
+    "text": "내가 사망의 음침한 골짜기로 다닐지라도 해를 두려워하지 않을 것은 주께서 나와 함께 하심이라.",
+    "reference": "시편 23:4"
+  },
+  "offerings": {
+    "tithe": [
+      "김건호(유남열)",
+      "김금자",
+      "심정숙",
+      "오세웅(김기옥)",
+      "유병석",
+      "윤유홍(장옥금)",
+      "이수아",
+      "이현정",
+      "한봉애"
+    ],
+    "thousandOffer": [
+      "김금자",
+      "박귀원",
+      "박대찬",
+      "박창균(조성순)",
+      "송봉수",
+      "이경은",
+      "이상덕(박순임)"
+    ],
+    "thanks": [
+      "김경순",
+      "노주애",
+      "박정선",
+      "박창균(조성순)",
+      "배정임",
+      "서타숙",
+      "신인영",
+      "심정숙",
+      "안춘자(민채린)",
+      "유제균(박인규)",
+      "이경은",
+      "이재란(신현봉)",
+      "정낙규",
+      "최양숙",
+      "표경애",
+      "홍희자"
+    ],
+    "building": [
+      "김건호(유남열)",
+      "노주애",
+      "유병석",
+      "전길식(이희경)"
+    ],
+    "monthly": [
+      "유제균(박인규)",
+      "윤유동(신명순)",
+      "이상덕(박순임)"
+    ],
+    "mission": [
+      "1여전도회",
+      "김건호(유남열)",
+      "여은숙",
+      "이상덕(박순임)",
+      "양환식(조복랑)",
+      "한봉애"
+    ],
+    "flower": [
+      "유남열",
+      "장옥금",
+      "한봉애"
+    ],
+    "retreatContribution": [
+      "1여전도회",
+      "고동호(윤경숙)",
+      "유제균(박인규)"
+    ]
+  }
+}

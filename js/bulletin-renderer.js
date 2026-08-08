@@ -466,6 +466,7 @@ class BulletinRenderer {
       { label: '구제헌금', keys: ['relief'] },
       { label: '강단화분', keys: ['platformDecor'] },
       { label: '꽃꽂이', keys: ['flower', 'flowers'] },
+      { label: '수련회찬조금', keys: ['retreatContribution', 'retreat', 'retreatOffering'] },
       { label: '차량헌금', keys: ['vehicles'] },
       { label: '가나우물', keys: ['ghanaWell'] },
       { label: '가나지하수', keys: ['ghanaWater'] },
