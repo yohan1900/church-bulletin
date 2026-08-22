@@ -34,7 +34,7 @@
   
   "eveningWorship": {
     "enabled": true,
-    "title": "설립 5주년 기념 찬양예배<br>한국아가페합창단 초청연주회",
+    "info": "설립 5주년 기념 찬양예배<br>한국아가페합창단 초청연주회",
     "prayer": "이상덕 목사",
     "nextPrayer": "이희경 권사"
   },

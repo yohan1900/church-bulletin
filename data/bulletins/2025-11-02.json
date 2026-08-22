@@ -34,14 +34,14 @@
   
   "eveningWorship": {
     "enabled": true,
-    "title": "21일 열방과 함께하는<br>2025년 다니엘 기도회<br>간증의 주인공이 되자",
-    "time": "오후 8시"
+    "info": "21일 열방과 함께하는<br>2025년 다니엘 기도회<br>간증의 주인공이 되자",
+    "sermon": "오후 8시"
   },
   
   "wednesdayWorship": {
     "enabled": true,
-    "title": "2025년 다니엘 기도회<br>간증의 주인공이 되자",
-    "time": "오후 8시"
+    "info": "2025년 다니엘 기도회<br>간증의 주인공이 되자",
+    "sermon": "오후 8시"
   },
   
   "dawnPrayer": {

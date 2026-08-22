@@ -34,7 +34,7 @@
   
   "eveningWorship": {
     "enabled": true,
-    "title": "12월 선교예배",
+    "info": "12월 선교예배",
     "prayer": "이정숙 권사",
     "nextPrayer": "이경은 집사",
     "scripture": "딤후 4 : 7, 8",
