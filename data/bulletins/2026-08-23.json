@@ -64,7 +64,7 @@
       {
         "type": "hymn",
         "label": "찬송",
-        "content": "우물가의 여인처럼 (다같이)"
+        "content": "주를 위한 이곳에 (다같이)"
       },
       {
         "type": "benediction",
@@ -108,7 +108,13 @@
   "districtWorship": {
     "enabled": false
   },
-  "prayerTopics": [],
+  "prayerTopics": [
+    "주님을 기쁘시게, 사람에게 칭찬 듣는 교회.",
+    "성령의 임재로 치유와 회복, 부흥을 주소서",
+    "다음 세대를 세우게 하소서",
+    "날마다 구원받는 수가 더해가게 하소서(3-30-300)",
+    "마중물의 기적이 일어나게 하옵소서. (아프리카 바쿤사 교회)"
+  ],
   "announcements": [
     {
       "order": 1,
