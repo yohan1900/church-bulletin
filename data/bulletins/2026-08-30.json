@@ -64,7 +64,7 @@
       {
         "type": "hymn",
         "label": "찬송",
-        "content": "해 같이 빛나리 (다같이)"
+        "content": "주님 한 분 밖에는 (다같이)"
       },
       {
         "type": "benediction",
@@ -94,7 +94,8 @@
     "nextPrayer": "황근숙 권사",
     "scripture": "눅 1 : 1---17",
     "sermon": "준비하시는 하나님",
-    "special": "1남전도회 (다음: 2남전도회)"
+    "special": "1남전도회 (다음: 2남전도회)",
+    "hymns": ["에벤에셀 하나님, 354장"]
   },
   "wednesdayWorship": {
     "enabled": true,
