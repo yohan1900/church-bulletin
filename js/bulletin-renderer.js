@@ -378,10 +378,18 @@ class BulletinRenderer {
     const container = document.getElementById('districtWorshipTable');
     if (!container) return;
 
+    const section = document.getElementById('report');
+    const navItem = document.querySelector('.navbar__menu__item[data-link="#report"]');
+
     if (!data || !data.enabled || !data.reports || data.reports.length === 0) {
       container.innerHTML = '';
+      if (section) section.style.display = 'none';
+      if (navItem) navItem.style.display = 'none';
       return;
     }
+
+    if (section) section.style.display = '';
+    if (navItem) navItem.style.display = '';
 
     // 연합구역예배 전용 폼
     if (data.mode === 'joint' && data.jointService && data.jointService.enabled) {
