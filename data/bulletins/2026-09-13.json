@@ -1,0 +1,88 @@
+{
+  "date": "2026-09-13",
+  "volume": "6",
+  "issue": "37",
+  "title": "",
+  "morningWorship": {
+    "leader": "이상덕 목사",
+    "order": [
+      { "type": "hymn", "label": "시작송", "content": "보혈을 지나 (다같이)" },
+      { "type": "responsive", "label": "성시교독", "content": "14번 시 24편 (다같이)" },
+      { "type": "repentance", "label": "참회의 기도", "content": "다같이" },
+      { "type": "hymn", "label": "찬송", "content": "380장 (다같이)" },
+      { "type": "prayer", "label": "중보의 기도", "content": "정민재 집사<br/>고승수 안수집사" },
+      { "type": "scripture", "label": "성경봉독", "content": "시편 90 : 1---10 (사회자)" },
+      { "type": "special", "label": "특별찬송", "content": "비전찬양대" },
+      { "type": "news", "label": "교회소식", "content": "담임목사" },
+      { "type": "offering", "label": "봉헌송", "content": "450장(1,5) (위원)" },
+      { "type": "pastoralPrayer", "label": "목양의 기도", "content": "담임목사" },
+      { "type": "sermon", "label": "설교", "content": "지혜롭게 살리라<br/>담임목사" },
+      { "type": "hymn", "label": "폐회송", "content": "305장 (다같이)" },
+      { "type": "benediction", "label": "축복의 기도", "content": "담임목사" }
+    ],
+    "nextWeekPrayer": [
+      { "part": "1부 기도", "person": "고은혜 집사" },
+      { "part": "2부 기도", "person": "오세웅 안수집사" }
+    ],
+    "worshipCommittee": {
+      "month": "9월",
+      "ushers": "심삼용 집사, 김정숙 권사",
+      "offering": "조성돈 장로, 신명순 권사"
+    }
+  },
+  "eveningWorship": {
+    "enabled": true,
+    "prayer": "서민자 권사",
+    "nextPrayer": "김영한 권사",
+    "scripture": "눅 1 : 18---25",
+    "sermon": "주께서 하시는 일",
+    "special": "1여전도회 (다음: 2여전도회)",
+    "hymns": ["주가 일하시네", "354장"]
+  },
+  "wednesdayWorship": {
+    "enabled": true,
+    "scripture": "느 5 : 1---19",
+    "sermon": "하늘나라 재건 7"
+  },
+  "dawnPrayer": {
+    "enabled": true,
+    "title": "얍복강 기도회 (5시 50분)",
+    "content": "성경통독 (레위기, 민수기)"
+  },
+  "districtWorship": {
+    "enabled": true,
+    "reports": [
+      { "district": "부여구역1", "attendance": 9, "offering": 60000, "scripture": "221", "nextLeader": "서이석" },
+      { "district": "부여구역2", "attendance": 5, "offering": 40000, "scripture": "333", "nextLeader": "최양숙" },
+      { "district": "백강구역", "attendance": 6, "offering": 45000, "scripture": "352", "nextLeader": "이희경" },
+      { "district": "규암구역", "attendance": 3, "offering": 30000, "scripture": "45", "nextLeader": "이재란" },
+      { "district": "금봉구역", "attendance": 5, "offering": 45000, "scripture": "143", "nextLeader": "이수아" },
+      { "district": "외리구역", "attendance": 6, "offering": 60000, "scripture": "", "nextLeader": "김영한" },
+      { "district": "백자구역", "attendance": 4, "offering": 35000, "scripture": "270", "nextLeader": "김기옥" },
+      { "district": "내리구역", "attendance": 4, "offering": 30000, "scripture": "190", "nextLeader": "김인순" }
+    ]
+  },
+  "prayerTopics": [],
+  "announcements": [
+    { "order": 1, "content": "저희 교회에 오신 모든 분들을 진심으로 환영하고 축복합니다.<br/>처음 오셨거나 등록하신 분들을 최선을 다해 섬기겠습니다." },
+    { "order": 2, "content": "창립 6주년 기념, 제1회 전교인 찬양축제가 10월 4일(주일밤)에 있습니다." },
+    { "order": 3, "content": "영혼 추수를 위해 매주 금요일 오전 10시 30분부터 노방전도 합니다." },
+    { "order": 4, "content": "새벽을 주님께 드리며, 기도의 파수꾼으로 세워지기 바랍니다." },
+    { "order": 5, "content": "추수감사절은 10월 25일입니다. 당일 오후엔 가을 운동회가 있습니다.<br/>사랑하는 이웃과 가족을 초청하여 함께 기뻐하는 날입니다." },
+    { "order": 6, "content": "지난 주일에 새로 등록하신 분(26-29), (김종훈 형제, 박순화 성도 인도)" }
+  ],
+  "memoryVerse": {
+    "text": "흙은 여전히 땅으로 돌아가고",
+    "content": "영은 그것을 주신 하나님께로 돌아가기 전에 기억하라.",
+    "reference": "전도서 12 : 7"
+  },
+  "offerings": {
+    "tithe": ["김건호(유남열)", "박대찬", "박에스더", "배정임", "변태관(이정숙)", "송옥자", "심정숙", "오숙자", "유병석", "유사라", "유제균(박인규)", "윤유홍(장옥금)", "조윤금", "최혜경", "한미나", "황근숙", "무명"],
+    "thousandOffer": ["김금자", "박귀원", "박대찬", "박대헌", "박주원", "박창균(조성순)", "송봉수", "심삼용(김정숙)", "이경은", "이상덕(박순임)", "최윤태", "최혜경", "한봉애", "황근숙"],
+    "thanks": ["고동호(윤경숙)", "김종훈", "박순화", "박재학", "신복남", "신인영", "심정숙", "여은숙(신문숙)", "유남열", "유제균(박인규)", "윤유홍", "이경은", "이상덕", "이해권(편미숙)", "이해령(윤광옥)", "최윤태(유순이)", "표경애", "무명"],
+    "mission": ["권업순", "김건호(유남열)", "노주애", "배정임", "여은숙", "이수아", "이종래", "이현정", "무명"],
+    "monthly": ["김영한", "양하은", "유제균(박인규)", "윤유동(신명순)", "이상덕(박순임)", "이수아(조윤금)", "장옥금", "전길식(이희경)", "전혜리(전병구)", "최윤태(유순이)", "한봉애", "무명"],
+    "building": ["배정임", "송규성", "이수아", "전길식(이희경)", "전순영", "무명"],
+    "flower": ["유남열", "장옥금", "황근숙"]
+  }
+}
