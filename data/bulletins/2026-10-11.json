@@ -1,0 +1,99 @@
+{
+  "date": "2026-10-11",
+  "volume": "6",
+  "issue": "41",
+  "title": "",
+  "morningWorship": {
+    "leader": "이상덕 목사",
+    "order": [
+      { "type": "hymn", "label": "시작송", "content": "보혈을 지나 (다같이)" },
+      { "type": "responsive", "label": "성시교독", "content": "53번 시 121편 (다같이)" },
+      { "type": "repentance", "label": "참회의 기도", "content": "다같이" },
+      { "type": "hymn", "label": "찬송", "content": "212장 (다같이)" },
+      { "type": "prayer", "label": "중보의 기도", "content": "박영란 권사<br/>조성돈 장로" },
+      { "type": "scripture", "label": "성경봉독", "content": "왕하 5 : 1---6 (사회자)" },
+      { "type": "special", "label": "특별찬송", "content": "비전찬양대" },
+      { "type": "news", "label": "교회소식", "content": "담임목사" },
+      { "type": "offering", "label": "봉헌송", "content": "450장(1,5) (위원)" },
+      { "type": "pastoralPrayer", "label": "목양의 기도", "content": "담임목사" },
+      { "type": "sermon", "label": "설교", "content": "이 가을에는 ~<br/>담임목사" },
+      { "type": "hymn", "label": "폐회송", "content": "당신은 사랑 받기 위해 (다같이)" },
+      { "type": "benediction", "label": "축복의 기도", "content": "담임목사" }
+    ],
+    "nextWeekPrayer": [
+      { "part": "1부 기도", "person": "김정명 집사" },
+      { "part": "2부 기도", "person": "유제균 장로" }
+    ],
+    "worshipCommittee": {
+      "month": "10월",
+      "ushers": "전길식 권사, 이희경 권사",
+      "offering": "이수아 권사, 김정명 집사"
+    }
+  },
+  "eveningWorship": {
+    "enabled": true,
+    "info": "10월 선교예배",
+    "prayer": "이재란 권사",
+    "nextPrayer": "이영희 권사",
+    "scripture": "롬 13 : 11---14",
+    "sermon": "때를 알자 (김현수 바느아트 선교사)",
+    "special": "4여전도회 (다음: 부여 1구역)",
+    "hymns": ["496장", "354장"]
+  },
+  "wednesdayWorship": {
+    "enabled": true,
+    "scripture": "느 6 : 15 ~ 7 : 4",
+    "sermon": "하늘나라 재건 10"
+  },
+  "dawnPrayer": {
+    "enabled": true,
+    "title": "얍복강 기도회 (5시 50분)",
+    "content": "성경통독 (민수기)"
+  },
+  "districtWorship": {
+    "enabled": true,
+    "reports": [
+      { "district": "부여구역1", "attendance": 6, "offering": 45000, "scripture": "452", "nextLeader": "김경옥" },
+      { "district": "부여구역2", "attendance": 7, "offering": 35000, "scripture": "257", "nextLeader": "서민자" },
+      { "district": "백강구역", "attendance": 5, "offering": 45000, "scripture": "142", "nextLeader": "이정숙" },
+      { "district": "규암구역", "location": "장옥금", "attendance": 4, "offering": 45000, "scripture": "20자", "nextLeader": "이화죽" },
+      { "district": "금봉구역", "attendance": 3, "offering": 25000, "scripture": "77", "nextLeader": "임병연" },
+      { "district": "외리구역", "attendance": 7, "offering": 70000, "scripture": "266", "nextLeader": "강봉순" },
+      { "district": "백자구역", "attendance": 6, "offering": 45000, "scripture": "149", "nextLeader": "임순석" },
+      { "district": "내리구역", "attendance": 5, "offering": 35000, "scripture": "315", "nextLeader": "김인순" }
+    ]
+  },
+  "prayerTopics": [
+    "주님을 기쁘시게, 사람에게 칭찬 듣는 교회.",
+    "성령의 임재로 치유와 회복, 부흥을 주소서",
+    "다음 세대를 세우게 하소서",
+    "날마다 구원받는 수가 더해가게 하소서(3-30-300)",
+    "마중물의 기적이 일어나게 하옵소서. (아프리카 바쿤사 교회)"
+  ],
+  "announcements": [
+    { "order": 1, "content": "저희 교회에 오신 모든 분들을 진심으로 환영하고 축복합니다." },
+    { "order": 2, "content": "오늘 저녁예배는 10월 선교예배로 드립니다.(바느아트 김현수 선교사)" },
+    { "order": 3, "content": "매주 금요일 거리 전도는 10시 30분입니다.(이번주 군청 앞)" },
+    { "order": 4, "content": "충청권 지방회 교직자 체육대회가 15일(목), 예산에서 있습니다." },
+    { "order": 5, "content": "새가족 심방을 하겠습니다.(19 ~ 23일) 신청해 주시기 바랍니다." },
+    { "order": 6, "content": "추수감사절은 10월 25일입니다. 당일 오후엔 가을 운동회가 있습니다.<br/>3.3.3 (3명 전도, 30일 작전, 3고 실천(기도하고, 찾아가고, 전하고))<br/>공동의 기도제목을 매일 한 마음으로 올려드리기 바랍니다." },
+    { "order": 7, "content": "초청대상자를 내 주시기 바랍니다.(이번주간 초청장 발송, 스티카 부착)" },
+    { "order": 8, "content": "오늘 오후 4시에 담임목사 취임식이 있습니다." },
+    { "order": 9, "content": "다음주일(18일) 저녁에 직원회가 있습니다." }
+  ],
+  "memoryVerse": {
+    "text": "칼로 찌름 같이 함부로 말하는 자가 있거니와",
+    "content": "지혜로운 자의 혀는 양약과 같으니라.",
+    "reference": "잠언 12 : 18"
+  },
+  "offerings": {
+    "tithe": ["김건호(유남열)", "김숙환", "김의순", "김향숙", "노주애", "박대찬", "박에스더", "배정임", "변택관(이정숙)", "서이석(이은순)", "심정숙", "유병석", "유순이", "유제균(박인규)", "이택상(박영란)", "이현정", "임순석", "조성돈(김경옥)", "한미나", "홍희자", "황근숙"],
+    "thousandOffer": ["김금자", "김낙준", "김태희", "박귀원", "박대찬", "박대헌", "박주원", "박창균(조성순)", "서민자", "송봉수", "심상용(김정숙)", "이강순", "이상덕(박순임)", "최영근(최성근)", "최윤태", "최혜경", "황근숙"],
+    "thanks": ["고동호(윤경숙)", "노주애", "박순남", "박재학", "배정솔", "변봉근", "신인영", "심정숙", "유인영", "윤광옥", "윤용근", "이은주", "임순석", "전윤서", "최윤태(유순이)", "최혜경", "표경애", "무명", "무명"],
+    "mission": ["김건호(유남열)", "김향숙", "노주애", "박명규", "심정숙", "여은숙", "오세웅(김기옥)", "이생현(문평화)", "이택상(박영란)", "한미나"],
+    "monthly": ["신현봉", "양하은", "유제균(박인규)", "윤유동(신명순)", "윤유홍(장옥금)", "이상덕(박순임)", "이수아", "전길식(이희경)", "전혜리(전병구)", "조성돈(김경옥)", "최윤태(유순이)", "무명"],
+    "building": ["노주애", "배정임", "전길식(이희경)"],
+    "visitThanks": ["이형태(임희자)", "정정순"],
+    "flower": ["김경옥", "박인규", "유남열", "황근숙"]
+  }
+}
