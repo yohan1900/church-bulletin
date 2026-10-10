@@ -56,7 +56,7 @@
       { "district": "부여구역1", "attendance": 6, "offering": 45000, "scripture": "452", "nextLeader": "김경옥" },
       { "district": "부여구역2", "attendance": 7, "offering": 35000, "scripture": "257", "nextLeader": "서민자" },
       { "district": "백강구역", "attendance": 5, "offering": 45000, "scripture": "142", "nextLeader": "이정숙" },
-      { "district": "규암구역", "location": "장옥금", "attendance": 4, "offering": 45000, "scripture": "20자", "nextLeader": "이화죽" },
+      { "district": "규암구역", "location": "장옥금", "attendance": 4, "offering": 35000, "scripture": "20자", "nextLeader": "이화죽" },
       { "district": "금봉구역", "attendance": 3, "offering": 25000, "scripture": "77", "nextLeader": "임병연" },
       { "district": "외리구역", "attendance": 7, "offering": 70000, "scripture": "266", "nextLeader": "강봉순" },
       { "district": "백자구역", "attendance": 6, "offering": 45000, "scripture": "149", "nextLeader": "임순석" },
