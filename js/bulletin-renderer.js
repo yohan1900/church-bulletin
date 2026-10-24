@@ -158,7 +158,7 @@ class BulletinRenderer {
 
     if (title) {
       title.style.display = 'block';
-      title.textContent = '주일밤예배';
+      title.textContent = data.serviceName || '주일밤예배';
     }
 
     // 상단 요약 정보 — 연두색 띠에는 `info` 필드만 표시
@@ -208,6 +208,7 @@ class BulletinRenderer {
       if (data.offering) rows += `<tr><th>헌금</th><td>${data.offering}</td></tr>`;
       if (data.commitment) rows += `<tr><th>다짐</th><td>${data.commitment}</td></tr>`;
       if (data.announcer) rows += `<tr><th>광고</th><td>${data.announcer}</td></tr>`;
+      if (data.notice) rows += `<tr><td colspan="2">${data.notice}</td></tr>`;
       if (data.hymns && data.hymns.length > 0) rows += `<tr><th>찬송</th><td>${data.hymns.join(', ')}</td></tr>`;
       if (data.benediction) rows += `<tr><th>축도</th><td>${data.benediction}</td></tr>`;
 
@@ -459,6 +460,7 @@ class BulletinRenderer {
       { label: '십일조', keys: ['tithe'] },
       { label: '일천번제', keys: ['thousandOffer'] },
       { label: '감사헌금', keys: ['thanks'] },
+      { label: '추수감사', keys: ['harvestThanks'] },
       { label: '맥추감사', keys: ['firstfruitsThanks', 'firstFruitsThanks', 'firstfruits', 'firstFruits'] },
       { label: '심방감사', keys: ['visitation', 'visitThanks'] },
       { label: '부활감사', keys: ['resurrectionThanks', 'resurrection'] },
@@ -475,6 +477,7 @@ class BulletinRenderer {
       { label: '강단화분', keys: ['platformDecor'] },
       { label: '꽃꽂이', keys: ['flower', 'flowers'] },
       { label: '수련회찬조금', keys: ['retreatContribution', 'retreat', 'retreatOffering'] },
+      { label: '운동회찬조', keys: ['sportsContribution'] },
       { label: '차량헌금', keys: ['vehicles'] },
       { label: '가나우물', keys: ['ghanaWell'] },
       { label: '가나지하수', keys: ['ghanaWater'] },
