@@ -27,6 +27,7 @@ class BulletinRenderer {
     this.renderDawnPrayer(bulletinData.dawnPrayer);
     this.renderPrayerTopics(bulletinData.prayerTopics);
     this.renderMemoryVerse(bulletinData.memoryVerse);
+    this.renderReflection(bulletinData.reflection);
     this.renderAnnouncements(bulletinData.announcements);
     this.renderDistrictWorship(bulletinData.districtWorship);
     this.renderOfferings(bulletinData.offerings);
@@ -351,6 +352,23 @@ class BulletinRenderer {
         <p>${data.reference}</p>
       `;
     }
+  }
+
+  // 생각하는 글
+  renderReflection(data) {
+    const section = document.getElementById('bulletinReflection');
+    if (!section) return;
+
+    section.hidden = !data;
+    if (!data) return;
+
+    document.getElementById('bulletinReflectionTitle').textContent = data.title;
+    const paragraphs = data.paragraphs.map(text => {
+      const paragraph = document.createElement('p');
+      paragraph.textContent = text;
+      return paragraph;
+    });
+    document.getElementById('bulletinReflectionText').replaceChildren(...paragraphs);
   }
 
   // 교회소식
